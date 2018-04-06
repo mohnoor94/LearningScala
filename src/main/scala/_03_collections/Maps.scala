@@ -1,4 +1,4 @@
-package collections
+package _03_collections
 
 object Maps extends App {
   // all are the same!

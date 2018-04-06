@@ -1,4 +1,4 @@
-package collections_with_functions
+package _04_collections_with_functions
 
 object MoreFun extends App {
   val a = List(1, 2, 3, 4, 5, 6)

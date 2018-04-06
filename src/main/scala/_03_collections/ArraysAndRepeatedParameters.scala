@@ -1,4 +1,4 @@
-package collections
+package _03_collections
 
 object ArraysAndRepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]

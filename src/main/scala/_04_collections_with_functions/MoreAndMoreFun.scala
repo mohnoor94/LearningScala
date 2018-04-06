@@ -1,4 +1,4 @@
-package collections_with_functions
+package _04_collections_with_functions
 
 object MoreAndMoreFun extends App {
   val groceries = List("Apples", "Milk", "Naan", "Egg", "Orange", "Almonds", "Peanut Butter")

@@ -1,4 +1,4 @@
-package functions
+package _02_functions
 
 import scala.language.postfixOps
 

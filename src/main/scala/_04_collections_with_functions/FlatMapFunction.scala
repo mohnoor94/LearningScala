@@ -1,4 +1,4 @@
-package collections_with_functions
+package _04_collections_with_functions
 
 object FlatMapFunction extends App {
   val a = (1 to 6).toList

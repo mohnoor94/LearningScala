@@ -1,4 +1,4 @@
-package collections
+package _03_collections
 
 object Ranges extends App {
   val r = 1 to 10 // include 10

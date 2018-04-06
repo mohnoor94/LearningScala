@@ -1,3 +1,5 @@
+package _01_intro
+
 import java.time.LocalDate
 
 class EmployeeWithCompanionObject private(val firstName: String, val lastName: String, val title: String, val hireDate: LocalDate) {

@@ -1,4 +1,4 @@
-package collections
+package _03_collections
 
 object Sets extends App {
   val set = Set(1, 2, 3, 4)

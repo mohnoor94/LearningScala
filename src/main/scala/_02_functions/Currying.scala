@@ -1,4 +1,4 @@
-package functions
+package _02_functions
 
 object Currying extends App {
   //  val g = (x: Int) => (y: Int) => x + y

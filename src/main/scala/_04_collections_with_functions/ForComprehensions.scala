@@ -1,4 +1,4 @@
-package collections_with_functions
+package _04_collections_with_functions
 
 object ForComprehensions extends App {
   //  for (i <- 1 to 10)

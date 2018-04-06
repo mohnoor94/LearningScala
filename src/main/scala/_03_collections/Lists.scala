@@ -1,4 +1,4 @@
-package collections
+package _03_collections
 
 object Lists extends App {
   val a = List(1, 2, 3, 4, 5)

@@ -1,4 +1,4 @@
-package functions
+package _02_functions
 
 class Foo(x: Int) {
   def bar(y: Int): Int = x + y

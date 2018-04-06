@@ -1,4 +1,4 @@
-package collections_with_functions
+package _04_collections_with_functions
 
 object FoldAndReduce extends App {
   val foldLeftResult = (1 to 10).foldLeft(0)((total: Int, next: Int) => total + next)

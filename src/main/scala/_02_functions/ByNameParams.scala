@@ -1,4 +1,4 @@
-package functions
+package _02_functions
 
 // Bla bla bla...!
 object ByNameParams extends App {
