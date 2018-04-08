@@ -9,6 +9,7 @@ class EmployeeWithCompanionObject private(val firstName: String, val lastName: S
 }
 
 object EmployeeWithCompanionObject {
+  // or use apply :)
   def create(firstName: String, lastName: String, title: String) =
     new EmployeeWithCompanionObject(firstName, lastName, title, LocalDate.now)
 
