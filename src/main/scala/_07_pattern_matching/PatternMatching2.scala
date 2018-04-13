@@ -7,7 +7,7 @@ object PatternMatching2 extends App {
 
 trait Expr2 {
   def show(): String = this match {
-    // TODO implement this and support classes
+    // TODO implement this and support parentheses
     case _ => throw new UnsupportedOperationException("Not implemented yet!")
   }
 }
