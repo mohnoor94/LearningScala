@@ -3,12 +3,17 @@ package _07_pattern_matching
 object PatternMatching2 extends App {
   println(Number2(10).show())
   println(Sum2(Number2(10), Number2(20)).show())
+  println(Sum2(Prod2(Number2(2), Var2("x")), Var2("y")).show())
+  println(Prod2(Sum2(Number2(2), Var2("x")), Var2("y")).show())
 }
 
 trait Expr2 {
   def show(): String = this match {
-    // TODO implement this and support parentheses
-    case _ => throw new UnsupportedOperationException("Not implemented yet!")
+    case Prod2(e1: Sum2, e2) => "(" + e1.show() + ") * " + e2.show()
+    case Sum2(l, r) => l.show + " + " + r.show
+    case Prod2(l, r) => l.show + " * " + r.show
+    case Var2(x) => x
+    case Number2(x) => x.toString
   }
 }
 

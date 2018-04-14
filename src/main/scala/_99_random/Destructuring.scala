@@ -1,4 +1,4 @@
-package _05_random
+package _99_random
 
 object Destructuring extends App {
   def returnMultiValues(): (String, Int, Double) = ("Hello", 5, 10.5)

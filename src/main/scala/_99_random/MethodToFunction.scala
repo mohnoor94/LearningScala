@@ -1,4 +1,4 @@
-package _05_random
+package _99_random
 
 object MethodToFunction extends App {
   def mulBy3(x: Int) = x * 3
