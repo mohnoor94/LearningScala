@@ -1,4 +1,4 @@
-package _07_pattern_matching
+package _06_pattern_matching
 
 object PatternMatching2 extends App {
   println(Number2(10).show())

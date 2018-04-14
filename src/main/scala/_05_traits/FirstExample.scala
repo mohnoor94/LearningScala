@@ -1,4 +1,4 @@
-package _06_traits
+package _05_traits
 
 
 // a trait is like interface in Java but can have

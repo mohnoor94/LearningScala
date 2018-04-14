@@ -1,4 +1,4 @@
-package _06_traits
+package _05_traits
 
 object ThirdExample_DiamondOfDeath extends App {
   var list = List[String]()
