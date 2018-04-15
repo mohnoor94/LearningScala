@@ -16,4 +16,8 @@ object Tuples extends App {
   println(tuple2 swap)
   println(tuple2.swap)
   println(tuple2)
+
+  val (x, y) = (1, 2)
+  println(x)
+  println(y)
 }

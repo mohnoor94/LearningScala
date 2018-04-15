@@ -1,5 +1,7 @@
 package _04_collections_with_functions
 
+import scala.language.postfixOps
+
 object MapFunction extends App {
   val a = (1 to 5).toList
   val f = (x: Int) => x + 1
@@ -13,6 +15,9 @@ object MapFunction extends App {
   println(a.map(1 +))
 
   println()
+
+  println(a map (x => x * x))
+
   println()
 
   val b = Set("Brown", "Red", "Green", "purple", "Gray", "Yellow")
