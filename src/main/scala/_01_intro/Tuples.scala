@@ -1,3 +1,5 @@
+package _01_intro
+
 object Tuples extends App {
   val t = (1, "Hello", 3.2)
 
