@@ -62,4 +62,18 @@ object FoldAndReduce extends App {
 
   println
   println("concat: " + concat(List(1, 2, 3), List("Hi", "Hello", "Bye")))
+
+  def mapFun[T, U](xs: List[T], f: T => U): List[U] =
+    (xs foldRight List[U]()) ((t, u) => f(t) :: u)
+
+  println
+  println("mapFun: " + mapFun[Int, Int](List(1, 2, 3), x => x * x))
+  println("mapFun: " + mapFun[String, Int](List("Hi", "Hello", "Bye"), _.length))
+
+  def lengthFun[T](xs: List[T]): Int =
+    (xs foldRight 0) ((_, x) => x + 1)
+
+  println
+  println("lengthFun: " + lengthFun(List(1, 2, 3)))
+  println("lengthFun: " + lengthFun(List("Hi", "Hello", "Bye", 5, 3.25, "test")))
 }
