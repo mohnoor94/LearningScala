@@ -78,6 +78,22 @@ object MoreFunctions extends App {
   println("*------*")
   println
 
+  println("===== exists =====")
+  println(a exists (_ >= 5))
+  println(a exists (_ <= 5))
+
+  println
+  println("*------*")
+  println
+
+  println("===== forall =====")
+  println(a forall  (_ >= 5))
+  println(a forall  (_ <= 5))
+  println(a forall  (_ <= 6))
+
+  println
+  println("*------*")
+  println
   println("===== by name example =====")
   val f = List.fill(10) {
     val x = 10

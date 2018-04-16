@@ -46,4 +46,9 @@ object FlatMapFunction extends App {
   // WoW Again!
   println(List(Some(4), None, Some(5), None, None, Some(10)).flatMap(x => x))
   println(List(Some(4), None, Some(5), None, None, Some(10)).flatten)
+
+  println
+
+  val s = "Hello World"
+  println(s flatMap (c => List('.', c)))
 }

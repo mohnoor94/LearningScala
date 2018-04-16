@@ -1,5 +1,21 @@
 package _03_collections
 
+/**
+                        Iterable
+             _____________|______________
+             |            |             |
+            Seq          Set           Map
+      _______|_____________________
+     |               |            |
+    List           Vector       Range
+
+ String and Array support the same operations as Seq and can
+ implicitly be converted to sequences where needed,
+ but they cannot be subclasses of Seq because they come from Java.
+
+ @see https://docs.scala-lang.org/tutorials/FAQ/collections.html
+       for full details
+ */
 object ArraysAndRepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]
 
@@ -21,10 +37,9 @@ object ArraysAndRepeatedParameters extends App {
   }
 
   println(repeatedParameterMethod(3, "egg", "a delicious sandwich", "protein", "high cholesterol"))
-  println()
+  println
   println(repeatedParameterMethod(3, "egg", List("a delicious sandwich", "protein", "high cholesterol")))
-  println()
+  println
   println(repeatedParameterMethod(3, "egg", List("a delicious sandwich", "protein", "high cholesterol"): _*))
-  println()
-
+  println
 }
