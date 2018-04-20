@@ -10,6 +10,7 @@ object Maps extends App {
   println(m3(2)) // return value <-- danger
 
   println(m3.get(5)) // None
+  println(m3 get 5) // None
   //  println(m3(5)) // Exception
 
 
@@ -39,6 +40,24 @@ object Maps extends App {
 
   println("==================")
 
-  val elements:Map[Symbol, String] = Map ('Co -> "Cobbalt", 'H -> "Helium", 'Pb -> "Lead")
-  println(elements.get('Co ))
+  val elements: Map[Symbol, String] = Map('Co -> "Cobbalt", 'H -> "Helium", 'Pb -> "Lead")
+  println(elements.get('Co))
+
+  val elementsWithDefaultValue = elements withDefaultValue "Not Found!"
+
+  def showElement(abbreviation: Symbol): String = elements get abbreviation match {
+    case Some(element) => element
+    case None => "Not Found!"
+  }
+
+  println(showElement('Co))
+  println(showElement('H))
+  println(showElement('Hi))
+
+  println("==================")
+  println(elementsWithDefaultValue)
+  println(elementsWithDefaultValue('Co))
+  println(elementsWithDefaultValue('H))
+  println(elementsWithDefaultValue('Hi))
+
 }

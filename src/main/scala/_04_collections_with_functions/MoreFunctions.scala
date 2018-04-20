@@ -19,9 +19,17 @@ object MoreFunctions extends App {
 
   val colours = List("Red", "Orange", "Green", "Grey", "Purple", "Pink")
   //  val gb = colours.groupBy(x => x.head)
-  val gb = colours.groupBy(_.head)
+  val gb = colours groupBy (_.head)
   println("===== groupBy =====")
   println(gb)
+
+  println
+  println("*------*")
+  println
+
+  println("===== sort =====")
+  println(colours sortWith (_.length < _.length))
+  println(colours sorted)
 
   println
   println("*------*")
@@ -87,9 +95,9 @@ object MoreFunctions extends App {
   println
 
   println("===== forall =====")
-  println(a forall  (_ >= 5))
-  println(a forall  (_ <= 5))
-  println(a forall  (_ <= 6))
+  println(a forall (_ >= 5))
+  println(a forall (_ <= 5))
+  println(a forall (_ <= 6))
 
   println
   println("*------*")

@@ -46,5 +46,4 @@ object MapFunction extends App {
 
   val age: Option[Int] = None
   println(age.map(1 +))
-
 }
