@@ -48,7 +48,7 @@ object GeneralExample09_Mnemonics extends App {
   )
 
   /**
-    * Inverts the mnemonics map to give a mop from chars 'A'..'Z' to '2'..'9'
+    * Inverts the mnemonics map to give a map from chars 'A'..'Z' to '2'..'9'
     */
   val charCode: Map[Char, Char] =
     for ((digit, str) <- mnemonics;

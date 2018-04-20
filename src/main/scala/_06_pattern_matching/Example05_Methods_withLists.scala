@@ -1,12 +1,12 @@
 package _06_pattern_matching
 
 object Example05_Methods_withLists extends App {
-  println("===== Last =====")
+  println("===== last =====")
   println(last(List(1, 2, 3)))
   println(last(List(1, 2)))
   println(last(List(1)))
   println
-  println("===== Last =====")
+  println("===== init =====")
   println(init(List(1, 2, 3)))
   println(init(List(1, 2)))
   println(init(List(1)))
