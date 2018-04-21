@@ -1,6 +1,6 @@
-package _05_traits
+package _05_oop
 
-object ThirdExample_DiamondOfDeath extends App {
+object Traits_Example03_DiamondOfDeath extends App {
   var list = List[String]()
 
   trait T1 {
