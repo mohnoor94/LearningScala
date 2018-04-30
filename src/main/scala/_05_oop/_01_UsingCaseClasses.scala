@@ -6,7 +6,7 @@ package _05_oop
   * work ok, except for the case if we have a null value, but we don't
   * like nulls and do not use them in Scala.
   */
-object UsingCaseClasses {
+object _01_UsingCaseClasses {
 
   case class User(name: String, email: String)
 

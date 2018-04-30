@@ -1,6 +1,6 @@
 package _03_collections
 
-object Lists extends App {
+object _01_Lists extends App {
   val a = List(1, 2, 3, 4, 5)
   val a2 = List.apply(1, 2, 3, 4, 5)
   val a3 = 1 :: 2 :: 3 :: 4 :: 5 :: Nil // :: pronounced as 'cons'

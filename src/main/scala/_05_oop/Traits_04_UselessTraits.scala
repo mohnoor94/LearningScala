@@ -6,7 +6,7 @@ package _05_oop
   * Useless trait is a trait that has only 1 method in it,
   * or a one who has only one implementation.
   */
-object Traits_UselessTraits {
+object Traits_04_UselessTraits {
 
   trait Foo {
     def execute(input: String): String

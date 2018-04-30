@@ -1,6 +1,6 @@
 package _04_collections_with_functions
 
-object ZipAndUnzip extends App {
+object _07_ZipAndUnzip extends App {
   val a = List(1, 2, 3, 4)
   val b = List(5, 6, 7, 8)
   val z = a zip b

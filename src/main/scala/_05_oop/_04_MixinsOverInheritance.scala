@@ -10,7 +10,7 @@ package _05_oop
   * Mixing is to declare multiple traits and use what you want using
   * 'with' keyword when declaring new classes or even in the fly!
   */
-object MixinsOverInheritance {
+object _04_MixinsOverInheritance {
 
   // Deep Inheritance (StringContainer, Countable, and LowerCaseable)
   trait StringContainer {

@@ -22,7 +22,7 @@ package _03_collections
   * x #:: xs == Stream.cons(x, xs)
   * #:: can be used in expressions as well as patterns
   */
-object Streams extends App {
+object _06_Streams extends App {
   val s1 = Stream(1, 2, 3, 4, 5)
   println(s"s1= $s1")
 

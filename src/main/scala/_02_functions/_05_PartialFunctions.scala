@@ -1,6 +1,6 @@
 package _02_functions
 
-object PartialFunctions extends App {
+object _05_PartialFunctions extends App {
   // function
   val f: String => String = {
     case "ping" => "pong"

@@ -1,6 +1,6 @@
 package _04_collections_with_functions
 
-object ForComprehensions extends App {
+object _05_ForComprehensions extends App {
   //  for (i <- 1 to 10)
   //    println(i)
   //

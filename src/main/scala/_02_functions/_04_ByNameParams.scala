@@ -1,7 +1,7 @@
 package _02_functions
 
 // Bla bla bla...!
-object ByNameParams extends App {
+object _04_ByNameParams extends App {
   def byValue(x: Int)(y: Int) = {
     println("By Value: ")
     x + y

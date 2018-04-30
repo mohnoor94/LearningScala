@@ -1,6 +1,6 @@
 package _08_lazy_vals
 
-object CommonUsagesOfLazyVal {
+object _03_CommonUsagesOfLazyVal {
 
   case class Foo(input: List[String]) {
     val lengths: List[Int] = {

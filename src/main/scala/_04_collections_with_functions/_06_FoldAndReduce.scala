@@ -1,7 +1,7 @@
 package _04_collections_with_functions
 
 //noinspection SimplifiableFoldOrReduce
-object FoldAndReduce extends App {
+object _06_FoldAndReduce extends App {
   val foldLeftResult = (1 to 10).foldLeft(0)((total: Int, next: Int) => total + next)
   //  val foldLeftResult = (1 to 10).foldLeft(0) { (total: Int, next: Int) =>
   //    println(s"Total: $total, Next: $next")

@@ -1,6 +1,6 @@
 package _03_collections
 
-object Maps extends App {
+object _03_Maps_And_Symbols extends App {
   // all are the same!
   val m = Map.apply((1, "One"), (2, "Two"), (3, "Three"))
   val m2 = Map((1, "One"), (2, "Two"), (3, "Three"))

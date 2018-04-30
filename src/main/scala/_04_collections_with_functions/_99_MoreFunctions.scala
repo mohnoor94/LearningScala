@@ -1,6 +1,6 @@
 package _04_collections_with_functions
 
-object MoreFunctions extends App {
+object _99_MoreFunctions extends App {
   val a = List(1, 2, 3, 4, 5, 6)
   //  val b = a partition (x => x % 2 == 0)
   val b = a partition (_ % 2 == 0)

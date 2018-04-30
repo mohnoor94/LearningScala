@@ -10,7 +10,7 @@ package _08_lazy_vals
   *
   * Note: Thread.sleep(...) used to illustrate execution.
   */
-object CostOfLazyVals {
+object _02_CostOfLazyVals {
 
   def myFunction1(): Unit = {
     // lazy val will not be executed until used

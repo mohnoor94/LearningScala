@@ -1,6 +1,6 @@
 package _03_collections
 
-object Ranges extends App {
+object _05_Ranges extends App {
   val r = 1 to 10 // include 10
   val r2 = 1 until 10 // exclude 10
 

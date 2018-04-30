@@ -8,7 +8,7 @@ package _05_oop
   * level, not for every individual object. Use it when you need it,
   * it's may a personal preference.
   */
-object InstanceMethodsInvokeStatic {
+object _02_InstanceMethodsInvokeStatic {
 
   class Foo(barVariable: Option[String]) {
     def convert(in: String): String = in.toLowerCase

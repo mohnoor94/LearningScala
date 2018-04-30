@@ -16,7 +16,7 @@ package _03_collections
  @see https://docs.scala-lang.org/tutorials/FAQ/collections.html
        for full details
  */
-object ArraysAndRepeatedParameters extends App {
+object _04_Arrays_And_RepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]
 
   println(a.head)

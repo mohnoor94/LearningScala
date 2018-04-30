@@ -1,6 +1,6 @@
 package _01_intro
 
-object Tuples extends App {
+object _06_Tuples extends App {
   val t = (1, "Hello", 3.2)
 
   println(t._1)

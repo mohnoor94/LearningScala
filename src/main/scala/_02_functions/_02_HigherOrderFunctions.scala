@@ -2,7 +2,7 @@ package _02_functions
 
 import scala.language.postfixOps
 
-object HigherOrderFunctions extends App {
+object _02_HigherOrderFunctions extends App {
   // Functions with functions (Higher order functions)
   // function2...
   //  val f: (Int, Int => Int) => Int = (x: Int, y: Int => Int) => y(x)

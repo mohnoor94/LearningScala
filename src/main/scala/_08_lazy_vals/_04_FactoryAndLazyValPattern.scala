@@ -6,7 +6,7 @@ package _08_lazy_vals
   * comes from the vals.
   * So we use val that depends on some other vars!
   */
-object FactoryAndLazyValPattern {
+object _04_FactoryAndLazyValPattern {
 
   var jdbcURLFactory: Option[() => String] = None
 

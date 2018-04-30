@@ -1,6 +1,6 @@
 package _04_collections_with_functions
 
-object FlatMapFunction extends App {
+object _04_FlatMapFunction extends App {
   val a = (1 to 6).toList
 
   // Collection of collection => Collection

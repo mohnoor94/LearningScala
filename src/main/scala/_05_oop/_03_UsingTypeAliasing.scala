@@ -1,6 +1,6 @@
 package _05_oop
 
-object UsingTypeAliasing {
+object _03_UsingTypeAliasing {
 
   trait Foo[A] {
     def bar: A

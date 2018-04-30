@@ -1,6 +1,6 @@
 package _04_collections_with_functions
 
-object FilterFunction extends App {
+object _02_Filter_FilterNot_Exsits_Functions extends App {
   val a = 1 to 10
   println(a.filter(x => x % 2 == 0))
   println(a.filter(_ % 2 == 0))

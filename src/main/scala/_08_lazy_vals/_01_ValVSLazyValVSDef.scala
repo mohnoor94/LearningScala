@@ -5,7 +5,7 @@ package _08_lazy_vals
   * val : evaluated once when declared
   * lazy val: evaluated once when needed
   */
-object ValVSLazyValVSDef extends App {
+object _01_ValVSLazyValVSDef extends App {
   def expr: Int = {
     val x = {
       print("x"); 1

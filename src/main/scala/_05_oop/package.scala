@@ -1,4 +1,4 @@
-import _05_oop.UsingTypeAliasing.Foo
+import _05_oop._03_UsingTypeAliasing.Foo
 // I had to add this import because I have several Foo types
 // across all files on the package.
 

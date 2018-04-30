@@ -1,6 +1,6 @@
 package _03_collections
 
-object Sets extends App {
+object _02_Sets extends App {
   val set = Set(1, 2, 3, 4)
   val set2 = Set(1, 2, 3, 4, 5)
   val set3 = Set(1, 2, 3, 4, 5, 6)
