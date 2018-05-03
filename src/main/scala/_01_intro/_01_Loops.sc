@@ -1,26 +1,37 @@
-//val r1 = (1 to 100).reverse.mkString(", ")
-//val r2 = (100 to 1 by -1).mkString(", ")
-//
-//
-//println(r1)
-//println(r2)
+val r1 = (1 to 10).reverse.mkString(", ")
+val r2 = (10 to 1 by -1).mkString(", ")
+println(r1)
+println(r2)
 
 
-//var r1 = ""
-//for (a <- 1 to 100) {
-//  r1 += a
-//  if (a < 100) r1 += ", "
-//}
-//println(r1)
+var r3 = ""
+for (a <- 1 to 10) {
+  r3 += a
+  if (a < 10) r3 += ", "
+}
+println(r3)
 
 
 val xs = List(1, 2, 3, 4, 5)
-var r2 = List[Int]()
+var list = List[Int]()
 
 for (a <- xs) {
-  r2 = r2 :+ (a + 1)
+  list = list :+ (a + 1)
 }
-println(r2)
+println(list)
 
-val r3 = for (a <- xs) yield a + 1
-println(r3)
+val r4 = for (a <- xs) yield a + 1
+println(r4)
+
+var a = 5
+val b = 10
+while (a < b) {
+  println(a * b)
+  a += 1
+}
+
+a = 5
+do {
+  println(a * b)
+  a += 1
+} while (a < b)
