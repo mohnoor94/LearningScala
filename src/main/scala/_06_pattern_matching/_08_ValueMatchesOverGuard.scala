@@ -4,7 +4,7 @@ package _06_pattern_matching
   * Use pattern matching over values as much as you can
   * ... unless you need to use a guard :)
   */
-object Example08_ValueMatchesOverGuard {
+object _08_ValueMatchesOverGuard {
 
   case class Foo(field1: Int, field2: String)
 

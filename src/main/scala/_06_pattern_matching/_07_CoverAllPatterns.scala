@@ -3,7 +3,7 @@ package _06_pattern_matching
 /**
   * Add a (case _) to your pattern matching!
   */
-object Example07_CoverAllPatterns {
+object _07_CoverAllPatterns {
 
   def myFunction1(input: Option[String]): Boolean = input match {
     case Some("foo") => false

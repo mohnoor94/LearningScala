@@ -4,7 +4,7 @@ package _06_pattern_matching
   * PatternMatching is way better than type checking and type casting.
   * So, if you need to type cast, it should be done in pattern matching!
   */
-object Example10_PatternMatchOverTypeCast {
+object _10_PatternMatchOverTypeCast {
 
   def myFunction1(input: Any): String = {
     input.asInstanceOf[String]

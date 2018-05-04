@@ -1,6 +1,6 @@
 package _06_pattern_matching
 
-object Example05_Methods_withLists extends App {
+object _05_Methods_withLists extends App {
   println("===== last =====")
   println(last(List(1, 2, 3)))
   println(last(List(1, 2)))

@@ -9,11 +9,11 @@ import scala.collection.immutable
   * General Solution
   */
 object _01_TheWaterPouringProblem extends App {
-  val problem = new Pouring(Vector(4, 9, 19, 2))
+  val problem = new Pouring(Vector(405, 805, 5, 1000))
   //  println(problem.moves)
   //  println(problem.pathSets.take(3).toList)
 
-  println(problem.solution(17))
+  println(problem.solution(320))
 
 }
 
@@ -22,7 +22,7 @@ class Pouring(capacity: Vector[Int]) {
   type State = Vector[Int]
 
   // initial state, all glasses have zero amount of water
-  val initialState: Vector[Int] = capacity map (_ => 0)
+  val initialState: State = capacity map (_ => 0)
 
 
   // Moves

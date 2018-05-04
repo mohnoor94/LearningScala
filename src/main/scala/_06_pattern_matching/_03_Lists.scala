@@ -1,6 +1,6 @@
 package _06_pattern_matching
 
-object Example03_Lists extends App {
+object _03_Lists extends App {
   def printList(list: List[Int]): Unit = list match {
     case Nil => println("Nil/Empty list")
     case List() => println("Nil/Empty list")

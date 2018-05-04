@@ -6,13 +6,23 @@ object Destructuring extends App {
   val tuple = returnMultiValues()
   val (str, int, double) = returnMultiValues()
 
-  println(tuple)
-  println(tuple._1)
-  println(tuple._2)
-  println(tuple._3)
-
+  println(s"tuple= $tuple")
+  println(s"tuple._1= $tuple._1")
+  println(s"tuple._2= $tuple._2")
+  println(s"tuple._3= $tuple._3")
+  println
   // or...
-  println(str)
-  println(int)
-  println(double)
+  println(s"str= $str")
+  println(s"int= $int")
+  println(s"double= $double")
+  println
+
+  // Entirety @ => we may use this with pattern matching if we care only about the type
+
+  val a@(b, c, d) = (5, 10, "Foo")
+  println(s"a= $a")
+  println(s"b= $b")
+  println(s"c= $c")
+  println(s"d= $d")
+  println(s"a._1= ${a._1}")
 }

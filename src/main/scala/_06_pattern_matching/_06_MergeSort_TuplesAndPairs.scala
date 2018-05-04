@@ -1,6 +1,6 @@
 package _06_pattern_matching
 
-object Example06_MergeSort_TuplesAndPairs extends App {
+object _06_MergeSort_TuplesAndPairs extends App {
   println("===== version 1 =====")
   println(mergeSort1(List(5, 9, 4, 2, 1, 6, 0, 3, 6)))
   println(mergeSort1(List(5, 0, 9, -3, -6, 8)))

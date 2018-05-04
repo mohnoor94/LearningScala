@@ -12,7 +12,7 @@ package _06_pattern_matching
   * --> Using PatternMatching we have to determine what the default
   * value is (we wrapped it in None on myFunction4 as example).
   */
-object Example09_FilteringMappingOverOptions {
+object _09_FilteringMappingOverOptions {
 
   def myFunction1(input: Option[String]): Boolean = {
     input.exists(in => in.trim.isEmpty)

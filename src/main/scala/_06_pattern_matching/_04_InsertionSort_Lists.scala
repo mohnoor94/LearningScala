@@ -1,6 +1,6 @@
 package _06_pattern_matching
 
-object Example04_InsertionSort_Lists extends App {
+object _04_InsertionSort_Lists extends App {
   println(insertionSort(List(5, 9, 4, 2, 1, 6, 0, 3, 6)))
   println(insertionSort(List(5, 0, 9, -3, -6, 8)))
   println(insertionSort(List(5, 4, 3, 2, 1)))
