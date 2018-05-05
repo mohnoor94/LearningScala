@@ -1,4 +1,6 @@
-package _09_timely_effects._01_the_observer_pattern
+package _09_timely_effects._01_the_observer_pattern.example
+
+import _09_timely_effects._01_the_observer_pattern.Publisher
 
 class BankAccount extends Publisher {
   private var balance = 0

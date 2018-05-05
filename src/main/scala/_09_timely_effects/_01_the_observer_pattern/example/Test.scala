@@ -1,4 +1,4 @@
-package _09_timely_effects._01_the_observer_pattern
+package _09_timely_effects._01_the_observer_pattern.example
 
 object Test extends App {
   val a, b = new BankAccount
