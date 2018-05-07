@@ -1,11 +1,10 @@
 package _97_general_examples
 
-object _02_RepeatUntil {
+object _002_RepeatUntil {
 
   /**
     * It should execute command one or more times, until condition is true
     */
-
   class REPEAT(command: => Unit) {
     def UNTIL(condition: => Boolean): Unit = {
       command
@@ -17,7 +16,6 @@ object _02_RepeatUntil {
   object REPEAT {
     def apply(command: => Unit): REPEAT = new REPEAT(command)
   }
-
 
   def main(args: Array[String]): Unit = {
     var v1 = 5

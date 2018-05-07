@@ -1,6 +1,6 @@
 package _97_general_examples
 
-object _01_Repeat {
+object _001_Repeat {
   /**
     * It should execute command one or more times, until condition is true
     */
