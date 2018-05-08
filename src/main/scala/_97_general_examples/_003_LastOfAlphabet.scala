@@ -5,7 +5,7 @@ package _97_general_examples
   */
 object _003_LastOfAlphabet {
   def lastOfAlphabet(text: String): Char =
-    text.map(_.toLower.toInt).distinct.max.toChar
+    text.map(_.toLower).max
 
   def main(args: Array[String]): Unit = {
     println(lastOfAlphabet("abcdefgZZ"))

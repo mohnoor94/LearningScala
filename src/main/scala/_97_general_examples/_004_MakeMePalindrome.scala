@@ -5,23 +5,29 @@ package _97_general_examples
   * to the right or left, such that finally you get a palindrome.
   */
 object _004_MakeMePalindrome {
-  def makeMePalindrome(text: String): String =
+  def makeMePalindrome(text: String): String = {
     if (text == text.reverse) text
     else {
-      // TODO complete this
-      ???
+      def palendromizeMe(text: String): String =
+        text + text.reverse.dropWhile(_ == text.last)
+
+      val leftPalindrome = palendromizeMe(text.reverse)
+      val rightPalindrome = palendromizeMe(text)
+      if (leftPalindrome.length < rightPalindrome.length) leftPalindrome
+      else rightPalindrome
     }
+  }
 
   def main(args: Array[String]): Unit = {
-    println(makeMePalindrome("ab"))
-    println(makeMePalindrome("abc"))
-    println(makeMePalindrome("abbc"))
-    println(makeMePalindrome("aacb"))
     println(makeMePalindrome("a"))
     println(makeMePalindrome("aa"))
-    println(makeMePalindrome("ab"))
     println(makeMePalindrome("aba"))
+    println(makeMePalindrome("abc"))
+    println(makeMePalindrome("ab"))
+    println(makeMePalindrome("abbc"))
+    println(makeMePalindrome("aacb"))
     println(makeMePalindrome("abaa"))
     println(makeMePalindrome("bba"))
+    println(makeMePalindrome("baa"))
   }
 }
