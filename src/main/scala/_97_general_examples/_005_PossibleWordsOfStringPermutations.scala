@@ -16,7 +16,7 @@ object _005_PossibleWordsOfStringPermutations {
       if (number == 0) result
       else factorial(number - 1, result * number)
 
-    val length = text.toLowerCase.distinct.length
+    val length = text.toLowerCase.length
     val nFactorial = factorial(length)
     (for (i <- 1 to length) yield nFactorial / factorial(length - i)).sum
   }
