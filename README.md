@@ -4,8 +4,11 @@ I do learning-by-doing in this repo, and I make some violations on purpose like 
 ## My Main Resources
 I'm using multiple resources to study and apply what I learn here with examples. This is a list of **main** resources I use:
 * [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1/). By École Polytechnique Fédérale de Lausanne. Taught by Martin Odersky.
+    * Great [written version](https://github.com/rohgar/scala-principles-1/wiki) of this course.
 * [Functional Program Design in Scala](https://www.coursera.org/learn/progfun2/). By École Polytechnique Fédérale de Lausanne. Taught by Martin Odersky.
+    * Great [written version](https://github.com/rohgar/scala-design-2/wiki) of this course.
 * [Parallel Programming](https://www.coursera.org/learn/parprog1/). By École Polytechnique Fédérale de Lausanne. Taught by Aleksandar Prokopec & Viktor Kuncak.
+    * Great [written version](https://github.com/rohgar/scala-parallel-programming-3/wiki) of this course.
 * Beginning Scala Programming. By Daniel Hinojosa. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
 * Best Practices in Scala Programming. By Joshua Backfield. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
 * Scala Core Programming: Methods, Classes, and Traits. By Daniel Hinojosa. Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
