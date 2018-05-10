@@ -13,6 +13,6 @@ I'm using multiple resources to study and apply what I learn here with examples.
 * Best Practices in Scala Programming. By Joshua Backfield. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
 * Scala Core Programming: Methods, Classes, and Traits. By Daniel Hinojosa. Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
 * Scala Core Programming: Sealed Traits, Collections, and Functions. By  Daniel Hinojosa. Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
-* Scala: Beyond the Basics. By  Daniel Hinojosa. Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
+* Scala: Beyond the Basics. By Daniel Hinojosa. Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
 
 I will update this list whenever I use a new resource.

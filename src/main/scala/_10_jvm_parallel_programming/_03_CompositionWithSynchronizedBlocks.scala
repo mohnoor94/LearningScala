@@ -1,4 +1,4 @@
-package _10_synchroniztion_primitives
+package _10_jvm_parallel_programming
 
 object _03_CompositionWithSynchronizedBlocks extends App {
   val a = new Account(50)

@@ -70,6 +70,6 @@
   * ▶ synchronization primitives such as synchronized
   * It is important to know what’s under the hood!
   */
-package object _10_synchronization_primitives {
+package object _10_jvm_parallel_programming {
 
 }

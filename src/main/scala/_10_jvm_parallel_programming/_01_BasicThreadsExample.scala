@@ -1,4 +1,4 @@
-package _10_synchroniztion_primitives
+package _10_jvm_parallel_programming
 
 /**
   * # Creating and starting threads:
