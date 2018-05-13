@@ -9,7 +9,7 @@ import scala.collection.immutable.Queue
   * becomes an in.reverse and out replaced with Nil. This is called a
   * pivot
   */
-object _10_Queue extends App {
+object _09_Queues extends App {
   val queue = Queue(1, 2, 3, 4)
 
   println(s"queue ==> $queue")

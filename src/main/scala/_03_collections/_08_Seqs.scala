@@ -12,7 +12,7 @@ import scala.collection.LinearSeq
   * The current default IndexedSeq is a Vector
   * The current default LinearSeq is a List
   */
-object _08_Seq extends App {
+object _08_Seqs extends App {
   println(s"Seq(30,50,100) ==> ${Seq(30, 50, 100)}")
   println(s"IndexedSeq(30,50,100) ==> ${IndexedSeq(30, 50, 100)}")
   println(s"LinearSeq(30,50,100) ==> ${LinearSeq(30, 50, 100)}")

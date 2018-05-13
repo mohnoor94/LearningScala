@@ -5,7 +5,7 @@ package _03_collections
   * append, prepend, and updates. Lucky for us the methods
   * are very much the same
   */
-object _07_Vector extends App {
+object _07_Vectors extends App {
   val vector = Vector(10, 11, 19)
   val vector2 = vector :+ 40
   val vector3 = 9 +: vector2

@@ -15,6 +15,8 @@ package _03_collections
 
  @see https://docs.scala-lang.org/tutorials/FAQ/collections.html
        for full details
+
+  An array is a java based array with a Scala wrapper around it to perform the functionality
  */
 object _04_Arrays_And_RepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]
@@ -28,6 +30,9 @@ object _04_Arrays_And_RepeatedParameters extends App {
   println(s"a.min: ${a.min}")
   println(s"a.isEmpty: ${a.isEmpty}")
   println(s"a.nonEmpty: ${a.nonEmpty}")
+  println(s"a.toList: ${a.toList}")
+  println(s"a.reverse.toList: ${a.reverse.toList}")
+  println(s"a.getClass.getSimpleName: ${a.getClass.getSimpleName}")
 
   println("===============")
 
