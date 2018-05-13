@@ -11,9 +11,9 @@ I'm using multiple resources to study and apply what I learn here with examples.
 * [Parallel Programming](https://www.coursera.org/learn/parprog1/). By École Polytechnique Fédérale de Lausanne. Taught by Aleksandar Prokopec & Viktor Kuncak.
     * Great [written version](https://github.com/rohgar/scala-parallel-programming-3/wiki) of this course.
 * Beginning Scala Programming. By [Daniel Hinojosa](https://github.com/dhinojosa). Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
-    * [Git Repository](https://resources.oreilly.com/examples/0636920043386.git) for this workshop.
+    * [Git Repository](https://resources.oreilly.com/examples/0636920043386.git) for this course.
 * Best Practices in Scala Programming. By Joshua Backfield. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
-    * [Git Repository](https://resources.oreilly.com/examples/0636920051336.git) for this workshop.
+    * [Git Repository](https://resources.oreilly.com/examples/0636920051336.git) for this course.
 * Scala Core Programming: Methods, Classes, and Traits. By [Daniel Hinojosa](https://github.com/dhinojosa). Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/dhinojosa/scala_programming_fundamentals_1) for this workshop.
 * Scala Core Programming: Sealed Traits, Collections, and Functions. By [Daniel Hinojosa](https://github.com/dhinojosa). Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
