@@ -19,19 +19,19 @@ package _03_collections
 object _04_Arrays_And_RepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]
 
-  println(a.head)
-  println(a.tail)
-  println(a.init)
-  println(a.last)
-  println(a(2))
-  println(a.max)
-  println(a.min)
-  println(a.isEmpty)
-  println(a.nonEmpty)
+  println(s"a.head: ${a.head}")
+  println(s"a.tail.toList ==> ${a.tail.toList}")
+  println(s"a.init.toList ==> ${a.init.toList}")
+  println(s"a.last: ${a.last}")
+  println(s"a(2): ${a(2)}")
+  println(s"a.max: ${a.max}")
+  println(s"a.min: ${a.min}")
+  println(s"a.isEmpty: ${a.isEmpty}")
+  println(s"a.nonEmpty: ${a.nonEmpty}")
 
   println("===============")
 
-  def repeatedParameterMethod(x: Int, y: String, z: Any*) = {
+  def repeatedParameterMethod(x: Int, y: String, z: Any*): String = {
     println(z)
     "%d %ss give you %s".format(x, y, z.mkString(", "))
   }

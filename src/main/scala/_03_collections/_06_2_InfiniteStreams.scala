@@ -21,6 +21,12 @@ object _06_2_InfiniteStreams {
   def sieve(s: Stream[Int]): Stream[Int] =
     s.head #:: sieve(s.tail filter (_ % s.head != 0))
 
+  def continuousEvens(): Stream[BigInt] = {
+    def ceHelper(n: BigInt): Stream[BigInt] = Stream.cons(n, ceHelper(n + 2))
+
+    ceHelper(2)
+  }
+
   def main(args: Array[String]): Unit = {
     val naturalNumbers = from(0)
     println("naturalNumbers.take(10).toList")
@@ -40,5 +46,19 @@ object _06_2_InfiniteStreams {
     println("(primes take 25).toList")
     println((primes take 25).toList)
     println
+
+    println("====================")
+
+    println("continuousEvens().take(5).toList")
+    println(continuousEvens().take(5).toList)
+
+    println("====================")
+
+    println("Stream.from(5).take(10).toList")
+    println(Stream.from(5).take(10).toList)
+    println
+
+    println("Stream.from(5, 2).take(10).toList")
+    println(Stream.from(5, 2).take(10).toList)
   }
 }
