@@ -16,6 +16,11 @@ package _05_oop
   * You can multiple inherit a trait and mixin traits.
   * Abstract classes offer stronger "is-a" relationships
   * A popular sealed abstract class is Option[+T], Some[T], and None.
+  *
+  *
+  * Sealed traits are also a good idea for pattern matching
+  * exhaustiveness. The compiler will be able to recognize the subclasses
+  * of all sealed traits (help to not get runtime exception surprises).
   */
 sealed trait Tree[+A]
 
