@@ -1,23 +1,8 @@
 package _03_collections
 
 /**
-                        Iterable
-             _____________|______________
-             |            |             |
-            Seq          Set           Map
-      _______|_____________________
-     |               |            |
-    List           Vector       Range
-
- String and Array support the same operations as Seq and can
- implicitly be converted to sequences where needed,
- but they cannot be subclasses of Seq because they come from Java.
-
- @see https://docs.scala-lang.org/tutorials/FAQ/collections.html
-       for full details
-
-  An array is a java based array with a Scala wrapper around it to perform the functionality
- */
+  * An array is a java based array with a Scala wrapper around it to perform the functionality
+  */
 object _04_Arrays_And_RepeatedParameters extends App {
   val a: Array[Int] = Array(1, 2, 3, 4) // int[1,2,3,4]
 
