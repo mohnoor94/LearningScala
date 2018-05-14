@@ -1,6 +1,6 @@
 package _07_implicit
 
-object Example01_MergeSort_TuplesAndPairs extends App {
+object _01_Example_MergeSort_TuplesAndPairs extends App {
   println("===== version 4 =====")
   println(mergeSort4(List(5, 9, 4, 2, 1, 6, 0, 3, 6)))
   println(mergeSort4(List(5, 0, 9, -3, -6, 8)))
