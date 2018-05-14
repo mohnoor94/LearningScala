@@ -1,5 +1,16 @@
 package _02_functions
 
+/**
+  * Partial Function...
+  * ...is like a function, but with an added method called isDefined.
+  * isDefined() returns true or false, it also has an `apply` method to
+  * invoke the function if isDefined returns true.
+  * Partial Functions together should form a complete
+  * function.
+  *
+  * @see '_06_pattern_matching' => '_15_PartialFunctionsUsingPatternMatching'
+  *      for more examples!
+  */
 object _05_PartialFunctions extends App {
   // function
   val f: String => String = {
