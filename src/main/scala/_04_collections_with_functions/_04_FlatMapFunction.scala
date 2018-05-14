@@ -1,5 +1,13 @@
 package _04_collections_with_functions
 
+/**
+  * -> flatMap will not only apply the given function on all
+  * elements of a Traversable,
+  * but all elements within the elements
+  * and flatten the results
+  *
+  * -> flatMap of Options will filter out all Nones and Keep the Somes
+  */
 object _04_FlatMapFunction extends App {
   val a = (1 to 6).toList
 

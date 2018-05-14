@@ -1,5 +1,14 @@
 package _04_collections_with_functions
 
+/**
+  * -> foldLeft will take two parameters group, the first
+  * will contain a seed and then a function that will
+  * aggregate the collection into one.
+  * -> foldLeft apply operation to the total with each element (left total first)
+  *
+  * -> reduce will collapse all elements of a collection using a function.
+  * It will start the first element as the 'seed' or 'accumulation
+  */
 //noinspection SimplifiableFoldOrReduce
 object _06_FoldAndReduce extends App {
   val foldLeftResult = (1 to 10).foldLeft(0)((total: Int, next: Int) => total + next)
@@ -76,4 +85,16 @@ object _06_FoldAndReduce extends App {
   println
   println("lengthFun: " + lengthFun(List(1, 2, 3)))
   println("lengthFun: " + lengthFun(List("Hi", "Hello", "Bye", 5, 3.25, "test")))
+  println
+
+  def factorialWithFoldLeft(x: Int): Int = (1 to x).foldLeft(1)(_ * _)
+
+  def factorialWithReduce(x: Int): Int = (1 to x).reduce(_ * _)
+
+  println(s"factorialWithFoldLeft(5): ${factorialWithFoldLeft(5)}")
+  println(s"factorialWithFoldLeft(10): ${factorialWithFoldLeft(10)}")
+  println
+  println(s"factorialWithReduce(5): ${factorialWithReduce(5)}")
+  println(s"factorialWithReduce(10): ${factorialWithReduce(10)}")
+
 }
