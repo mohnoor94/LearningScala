@@ -6,6 +6,11 @@ package _07_implicit
   * are compile time tricks for implicit.
   *
   * One strategy is to wrap a value in a type to avoid conflict"
+  *
+  * Note:
+  * the implicit group parameter list, can contain
+  * more than one parameter, but needs to be in the same
+  * implicit parameter group (and to be the last params group)
   */
 
 case class Rate(value: Int)
