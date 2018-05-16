@@ -7,7 +7,7 @@ import scala.collection.JavaConverters._
 /**
   * All of these conversions are done using implicits
   */
-object JavaToScalaAndViceVersa extends App {
+object InteroperabilityWithJava extends App {
   val javaToScalaList: List[String] = ZoneId.getAvailableZoneIds.asScala.toList
   val javaToScalaSet: Set[String] = ZoneId.getAvailableZoneIds.asScala.toSet
   val scalaToJavaList: java.util.List[Int] = List(1, 2, 3).asJava
