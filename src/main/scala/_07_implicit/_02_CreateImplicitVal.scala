@@ -5,7 +5,7 @@ package _07_implicit
   * into the scope, and it is there when you need it, hence it is implicit.
   * This provide a lot of great techniques that we can use in Scala.
   */
-object _02_Example_CreateImplicitVal extends App {
+object _02_CreateImplicitVal extends App {
   implicit val rate: Int = 20
 
   /**
