@@ -20,3 +20,5 @@ I'm using multiple resources to study and apply what I learn here with examples.
     * [GitHub Repository](https://github.com/dhinojosa/scala_programming_fundamentals_2) for this workshop.
 * Scala: Beyond the Basics. By [Daniel Hinojosa](https://github.com/dhinojosa). Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/dhinojosa/scala_beyond_basics) for this workshop.
+* [Scala Puzzlers](http://scalapuzzlers.com/). The fun path to deeper understanding. By Andrew Phillips and Nermin Šerifović.
+    * This book is used in '_96_scala_puzzlers' package, all examples, and a lot of explanations are copied as they are.
