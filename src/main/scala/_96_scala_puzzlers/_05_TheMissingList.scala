@@ -9,6 +9,10 @@ package _96_scala_puzzlers
   * That's mean, with the second expression, each of the 2 internal members will results
   * in 2, and since the outer collection is a set, it will eliminate the repeated members,
   * so it will keep only one of the two 2s. and the sum in this case will be 2.
+  *
+  * --> Pay close attention to the possible input types to your methods that operate on collections.
+  * If you do not need to preserve the input type, consider constructing your own intermediate
+  * types with known characteristics.
   */
 object _05_TheMissingList {
   def sumSizes(collections: Iterable[Iterable[_]]): Int =
