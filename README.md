@@ -4,11 +4,11 @@ I do learning-by-doing in this repo, and I make some violations on purpose like 
 ## My Main Resources
 I'm using multiple resources to study and apply what I learn here with examples. This is a list of **main** resources I use (_I will update this list whenever I use a new resource_):
 
-* [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1/). By École Polytechnique Fédérale de Lausanne. Taught by Martin Odersky.
+* [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1/). By École Polytechnique Fédérale de Lausanne. Taught by [Martin Odersky](https://github.com/odersky).
     * Great [written version](https://github.com/rohgar/scala-principles-1/wiki) of this course.
-* [Functional Program Design in Scala](https://www.coursera.org/learn/progfun2/). By École Polytechnique Fédérale de Lausanne. Taught by Martin Odersky.
+* [Functional Program Design in Scala](https://www.coursera.org/learn/progfun2/). By École Polytechnique Fédérale de Lausanne. Taught by [Martin Odersky](https://github.com/odersky).
     * Great [written version](https://github.com/rohgar/scala-design-2/wiki) of this course.
-* [Parallel Programming](https://www.coursera.org/learn/parprog1/). By École Polytechnique Fédérale de Lausanne. Taught by Aleksandar Prokopec & Viktor Kuncak.
+* [Parallel Programming](https://www.coursera.org/learn/parprog1/). By École Polytechnique Fédérale de Lausanne. Taught by Aleksandar Prokopec and Viktor Kuncak.
     * Great [written version](https://github.com/rohgar/scala-parallel-programming-3/wiki) of this course.
 * [Beginning Scala Programming](https://www.safaribooksonline.com/library/view/beginning-scala-programming/9781771374811/). By [Daniel Hinojosa](https://github.com/dhinojosa). Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [Git Repository](https://resources.oreilly.com/examples/0636920043386.git) for this course.
@@ -24,6 +24,6 @@ I'm using multiple resources to study and apply what I learn here with examples.
     * This book is used in '_96_scala_puzzlers' package, all examples, and a lot of explanations are copied as they are.
 * [Practical Scala for Java Developers](https://www.safaribooksonline.com/library/view/practical-scala-for/9781491969472/). By Julian Templeman and Ben Evans. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/julian-t/EssentialScala) for this course.
-
+#
 #### Note:
 The order of packages and/or files do not always mean that's the natural order of learning these specific topics, but it directly reflects the order of when I learned this piece of information. 
