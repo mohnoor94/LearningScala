@@ -1,6 +1,6 @@
 package _11_exceptions
 
-import scala.util.Try
+import scala.util.{Success, Try}
 
 object _05_TryWithForComprehensions {
   /**
@@ -17,5 +17,14 @@ object _05_TryWithForComprehensions {
     println(adder("123", "112"))
     println(adder("123", "ab"))
     println(adder("12gf3", "562"))
+
+    // random example
+    val randomExample: Try[String] = for {
+      language <- Success("Scala")
+      behaviour <- Success("rocks")
+    } yield s"$language $behaviour"
+
+    println
+    println(s"randomExample: $randomExample")
   }
 }
