@@ -1,4 +1,4 @@
-package _11_exceptions
+package _11_failure_handling
 
 import scala.util.{Success, Try}
 

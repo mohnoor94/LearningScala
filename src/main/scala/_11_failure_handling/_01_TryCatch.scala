@@ -1,4 +1,4 @@
-package _11_exceptions
+package _11_failure_handling
 
 object _01_TryCatch extends App {
   val val1 = "123"

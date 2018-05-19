@@ -42,18 +42,40 @@ object _06_FoldAndReduce extends App {
   println("reduce left: " + (1 to 10).reduceLeft(_ + _))
 
   println("mkString: " + (1 to 10).mkString(", "))
+  println
 
-  def mySumReduce(xs: List[Int]) = (0 :: xs) reduceLeft (_ + _)
+  print("List(1, 3, 8).foldLeft(100)((s, x) => s - x) ==> ")
+  println(List(1, 3, 8).foldLeft(100)((s, x) => s - x))
+  println("Execution: ((100-1) - 3) - 8")
+  println
 
-  def myProductReduce(xs: List[Int]) = (1 :: xs) reduceLeft (_ * _)
+  print("List(1, 3, 8).foldRight(100)((s, x) => s - x) ==> ")
+  println(List(1, 3, 8).foldRight(100)((s, x) => s - x))
+  println("Execution: 1 - (3 - (8 - 100))")
+  println
+
+  print("List(1, 3, 8).reduceLeft((s, x) => s - x) ==> ")
+  println(List(1, 3, 8).reduceLeft((s, x) => s - x))
+  println("Execution: (1 - 3) - 8")
+  println
+
+  print("List(1, 3, 8).reduceRight((s, x) => s - x) ==> ")
+  println(List(1, 3, 8).reduceRight((s, x) => s - x))
+  println("Execution: 1 - (3 - 8)")
+  println
+
+
+  def mySumReduce(xs: List[Int]): Int = (0 :: xs) reduceLeft (_ + _)
+
+  def myProductReduce(xs: List[Int]): Int = (1 :: xs) reduceLeft (_ * _)
 
   println
   println("mySumReduce: " + mySumReduce((1 to 10).toList))
   println("myProductReduce: " + myProductReduce((1 to 10).toList))
 
-  def mySumFold(xs: List[Int]) = (xs foldLeft 0) (_ + _)
+  def mySumFold(xs: List[Int]): Int = (xs foldLeft 0) (_ + _)
 
-  def myProductFold(xs: List[Int]) = (xs foldLeft 1) (_ * _)
+  def myProductFold(xs: List[Int]): Int = (xs foldLeft 1) (_ * _)
 
   println
   println("mySumFold: " + mySumFold((1 to 10).toList))
