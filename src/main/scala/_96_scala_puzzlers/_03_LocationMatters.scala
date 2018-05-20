@@ -14,7 +14,7 @@ package _96_scala_puzzlers
   * --> We execute anything inside the constructor, then all super traits and
   * classes from left to right as they inserted.
   */
-object _03_Location {
+object _03_LocationMatters {
 
   trait A {
     val audience: String

@@ -13,7 +13,7 @@ package _96_scala_puzzlers
   * --> Scala encourages concise code, but there is such a thing as too much conciseness.
   * When using placeholder syntax, be aware of the scope of the function that is created.
   */
-object _01_HiThere extends App {
+object _01_FunctionScope extends App {
   println(List(1, 2).map { i => println("Hi"); i + 1 })
   println(List(1, 2).map { println("Hi"); _ + 1 })
 }
