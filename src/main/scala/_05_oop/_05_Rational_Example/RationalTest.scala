@@ -1,5 +1,7 @@
 package _05_oop._05_Rational_Example
 
+import scala.language.postfixOps
+
 object RationalTest extends App {
   println(s"new Rational(1, 2): ${new Rational(1, 2)}")
   println(s"new Rational(10, 20): ${new Rational(10, 20)}")
@@ -42,4 +44,12 @@ object RationalTest extends App {
   println(s"5 - r1 ==> ${5 - r1}")
   println(s"5 * r1 ==> ${5 * r1}")
   println(s"5 / r1 ==> ${5 / r1}")
+  println()
+
+  println(s"r1 max r2 ==> ${r1 max r2}")
+  println(s"r1 min r2 ==> ${r1 min r2}")
+  println()
+
+  println(s"r1 abs ==> ${r1 abs}")
+  println(s"new Rational(-5, 3) abs ==> ${new Rational(-5, 3) abs}")
 }

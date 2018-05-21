@@ -76,6 +76,10 @@ class Rational(val numerator: Int, val denominator: Int) {
 
   def max(that: Rational): Rational = if (this.<(that)) that else this
 
+  def min(that: Rational): Rational = if (this.>(that)) that else this
+
+  def abs: Rational = if (this < 0) this * -1 else this
+
   private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 }
 
