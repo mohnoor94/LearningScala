@@ -3,13 +3,13 @@ package _05_oop._05_Rational_Example
 import scala.language.postfixOps
 
 object RationalTest extends App {
-  println(s"new Rational(1, 2): ${new Rational(1, 2)}")
-  println(s"new Rational(10, 20): ${new Rational(10, 20)}")
+  println(s"Rational(1, 2): ${Rational(1, 2)}")
+  println(s"Rational(10, 20): ${Rational(10, 20)}")
   println()
 
-  val r1 = new Rational(1, 2)
-  val r2 = new Rational(3, 4)
-  val r3 = new Rational(6, 16)
+  val r1 = Rational(1, 2)
+  val r2 = Rational(3, 4)
+  val r3 = Rational(6, 16)
 
   println(s"r1: $r1")
   println(s"r2: $r2")
@@ -32,7 +32,7 @@ object RationalTest extends App {
   println()
 
   println(s"r1 > r2 : ${r1 > r2}")
-  println(s"r1 > r2 : ${r1 < r2}")
+  println(s"r1 < r2 : ${r1 < r2}")
   println(s"r1 >= r2 : ${r1 >= r2}")
   println(s"r1 <= r2 : ${r1 <= r2}")
   println(s"r1 == r2 : ${r1 == r2}")
@@ -51,5 +51,5 @@ object RationalTest extends App {
   println()
 
   println(s"r1 abs ==> ${r1 abs}")
-  println(s"new Rational(-5, 3) abs ==> ${new Rational(-5, 3) abs}")
+  println(s"Rational(-5, 3) abs ==> ${Rational(-5, 3) abs}")
 }

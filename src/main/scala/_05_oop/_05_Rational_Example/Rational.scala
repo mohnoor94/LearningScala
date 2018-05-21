@@ -74,9 +74,9 @@ class Rational(val numerator: Int, val denominator: Int) {
 
   def !=(that: Rational): Boolean = this.n * that.d != that.n * this.d
 
-  def max(that: Rational): Rational = if (this.<(that)) that else this
+  def max(that: Rational): Rational = if (this < that) that else this
 
-  def min(that: Rational): Rational = if (this.>(that)) that else this
+  def min(that: Rational): Rational = if (this > that) that else this
 
   def abs: Rational = if (this < 0) this * -1 else this
 
@@ -85,4 +85,6 @@ class Rational(val numerator: Int, val denominator: Int) {
 
 object Rational {
   implicit val intToRational: Int => Rational = (x: Int) => new Rational(x)
+
+  def apply(numerator: Int, denominator: Int): Rational = new Rational(numerator, denominator)
 }
