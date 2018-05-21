@@ -1,6 +1,8 @@
 package _04_collections_with_functions
 
-object _05_ForComprehensions extends App {
+import scala.language.postfixOps
+
+object _05_1_ForComprehensions extends App {
   //  for (i <- 1 to 10)
   //    println(i)
   //

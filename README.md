@@ -25,6 +25,7 @@ I'm using multiple resources to study and apply what I learn here with examples.
 * [Practical Scala for Java Developers](https://www.safaribooksonline.com/library/view/practical-scala-for/9781491969472/). By Julian Templeman and Ben Evans. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/julian-t/EssentialScala) for this course.
 * [Scala 101](https://cognitiveclass.ai/learn/scala/#course2000). Free online course on [Cognitive Class](https://cognitiveclass.ai/).
+* [Programming in Scala, Third Edition](https://www.oreilly.com/library/view/programming-in-scala/9780981531687/). A book by Bill Venners, Lex Spoon, and Martin Odersky.
 #
 #### Note:
 The order of packages and/or files do not always mean that's the natural order of learning these specific topics, but it directly reflects the order of when I learned this piece of information. 
