@@ -1,4 +1,4 @@
-package _05_oop._05_Rational_Example
+package _05_oop._01_introductory_example
 
 import scala.language.postfixOps
 
