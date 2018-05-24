@@ -53,11 +53,160 @@ package _05_oop._02_composition_and_inheritance
   *
   * ▶▶ Another way to think about this is if the function you're calling performs an operation, use the parentheses.
   * But if it merely provides access to a property, leave the parentheses off.
+  *
+  *
+  * ..............................................
+  *
+  * 10.12 IMPLEMENTING ABOVE, BESIDE, AND TOSTRING
+  * >> above: Putting one element above another means concatenating the two contents values of the elements. In fact,
+  * the code shown is not quite sufficient because it does not let you put elements of different widths on top of each
+  * other. To keep things simple in this section, however, we'll leave this as is and only pass elements of the same
+  * length to above.
+  *
+  * >> beside: To put two elements beside each other, we'll create a new element in which every line results from
+  * concatenating corresponding lines of the two elements. As before, to keep things simple, we'll start by assuming the
+  * two elements have the same height. This leads to the following design of method beside (below).
+  * >> The 'besideImperative' method first allocates a new array, contents, and fills it with the concatenation of the
+  * corresponding array elements in this.contents and that.contents. It finally produces a new ArrayElement containing
+  * the new contents.
+  * >> Although this implementation of beside works, it is in an imperative style, the telltale sign of which is the
+  * loop in which we index through arrays. Alternatively, the method could be abbreviated to one expression (beside).
+  * Here, the two arrays, this.contents and that.contents, are transformed into an array of pairs (as Tuple2s are called)
+  * using the zip operator. The zip operator picks corresponding elements in its two operands and forms an array of pairs.
+  *
+  * >> toString: You still need a way to display elements. As usual, this is done by defining a toString method that
+  * returns an element formatted as a string. Note that toString does not carry an empty parameter list. This follows
+  * the recommendations for the uniform access principle, because toString is a pure method that does not take any
+  * parameters.
+  *
+  *
+  * 10.13 DEFINING A FACTORY OBJECT (Continue, see the Element object below at first)
+  * With the advent of these factory methods, it makes sense to change the implementation of class Element so that it
+  * goes through our factory methods rather than creating new ArrayElement instances explicitly.
+  * >>>> go back to Element object.
+  *
+  *
+  * 10.14 HEIGHTEN AND WIDEN
+  * >> We need one last enhancement. The current version of Element is not quite sufficient because it does not allow
+  * clients to place elements of different widths on top of each other, or place elements of different heights beside
+  * each other.
+  * >> For example, evaluating the following expression won't work correctly, because the second line in the combined
+  * element is longer than the first:
+  * ``
+  * new ArrayElement(Array("hello")) above
+  * new ArrayElement(Array("world!"))
+  * ``
+  * >> Similarly, evaluating the following expression would not work properly, because the first ArrayElement has a
+  * height of two and the second a height of only one:
+  * ``
+  * new ArrayElement(Array("one", "two")) beside
+  * new ArrayElement(Array("one"))
+  * ``
+  * >> We will add a private helper method, widen, which takes a width and returns an Element of that width. The result
+  * contains the contents of this Element, centered, padded to the left and right by any spaces needed to achieve the
+  * required width.
+  * >> We will also add a similar method, heighten, which performs the same function in the vertical direction.
+  * >> The widen method is invoked by above to ensure that Elements placed above each other have the same width.
+  * >> Similarly, the heighten method is invoked by beside to ensure that elements placed beside each other have the
+  * same height.
+  *
+  * With these changes, the layout library is ready for use.
   */
 abstract class Element {
   def contents: Array[String]
-  //  def height: Int = contents.length
-  val height: Int = contents.length
-  //  def width: Int = if (height == 0) 0 else contents(0).length
-  val width: Int = if (height == 0) 0 else contents(0).length
+
+  def height: Int = contents.length
+
+  def width: Int = if (height == 0) 0 else contents(0).length
+
+  /** Putting one element above another means concatenating the two contents values of the elements. */
+  //  def above(that: Element): Element = Element(this.contents ++ that.contents)
+  def above(that: Element): Element = {
+    val this1 = this widen that.width
+    val that1 = that widen this.width
+    Element(this1.contents ++ that1.contents)
+  }
+
+  //  /** To put two elements beside each other (Imperative Solution)*/
+  //  def besideImperative(that: Element): Element = {
+  //    val contents = new Array[String](this.contents.length)
+  //    for (i <- this.contents.indices)
+  //      contents(i) = this.contents(i) + that.contents(i)
+  //    new ArrayElement(contents)
+  //  }
+
+  /** To put two elements beside each other */
+  //  def beside(that: Element): Element =
+  //    Element(for ((line1, line2) <- this.contents zip that.contents) yield line1 + line2)
+  def beside(that: Element): Element = {
+    val this1 = this heighten that.height
+    val that1 = that heighten this.height
+    Element(for ((line1, line2) <- this1.contents zip that1.contents) yield line1 + line2)
+  }
+
+
+  def widen(w: Int): Element =
+    if (w <= width) this
+    else {
+      val left = Element(' ', (w - width) / 2, height)
+      val right = Element(' ', w - width - left.width, height)
+      left beside this beside right
+    }
+
+  def heighten(h: Int): Element =
+    if (h <= height) this
+    else {
+      val top = Element(' ', width, (h - height) / 2)
+      val bot = Element(' ', width, h - height - top.height)
+      top above this above bot
+    }
+
+  override def toString: String = contents mkString "\n"
+}
+
+
+/**
+  * 10.13 DEFINING A FACTORY OBJECT
+  * >> You now have a hierarchy of classes for layout elements. This hierarchy could be presented to your clients
+  * "as is," but you might also choose to hide the hierarchy behind a factory object.
+  * >> A factory object contains methods that construct other objects. Clients would then use these factory methods to
+  * construct objects, rather than constructing the objects directly with new. An advantage of this approach is that
+  * object creation can be centralized and the details of how objects are represented with classes can be hidden. This
+  * hiding will both make your library simpler for clients to understand, because less detail is exposed, and provide
+  * you with more opportunities to change your library's implementation later without breaking client code.
+  *
+  * >> The first task in constructing a factory for layout elements is to choose where the factory methods should be
+  * located. Should they be members of a singleton object or of a class? What should the containing object or class be
+  * called? There are many possibilities. A straightforward solution is to create a companion object of class Element
+  * and make this the factory object for layout elements. That way, you need to expose only the class/object combo of
+  * Element to your clients, and you can hide the three implementation classes ArrayElement, LineElement, and
+  * UniformElement.
+  * >>>> go to Element class above.
+  * In addition, given the factory methods, the subclasses, ArrayElement, LineElement, and UniformElement, could now be
+  * private because they no longer need to be accessed directly by clients. In Scala, you can define classes and
+  * singleton objects inside other classes and singleton objects. One way to make the Element subclasses private is to
+  * place them inside the Element singleton object and declare them private there. The classes will still be accessible
+  * to the three apply factory methods, where they are needed.
+  */
+object Element {
+
+  private class ArrayElement(override val contents: Array[String]) extends Element
+
+  private class LineElement(s: String) extends Element {
+    override val contents = Array(s)
+    override val width: Int = s.length
+    override val height = 1
+  }
+
+  private class UniformElement(ch: Char, override val width: Int, override val height: Int) extends Element {
+    private val line = ch.toString * width
+
+    override def contents: Array[String] = Array.fill(height)(line)
+  }
+
+  def apply(contents: Array[String]): Element = new ArrayElement(contents)
+
+  def apply(chr: Char, width: Int, height: Int): Element = new UniformElement(chr, width, height)
+
+  def apply(line: String): Element = new LineElement(line)
 }

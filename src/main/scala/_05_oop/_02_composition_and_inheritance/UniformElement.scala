@@ -16,8 +16,11 @@ package _05_oop._02_composition_and_inheritance
   * ▶ The other half of the story, however, is that method invocations on variables and expressions are dynamically bound.
   * This means that the actual method implementation invoked is determined at run time based on the class of the object,
   * not the type of the variable or expression.
+  *
+  *
+  * >>!!>> The implementation moved to Element object in section (10.13 DEFINING A FACTORY OBJECT)
   */
-class UniformElement(ch: Char, override val width: Int, override val height: Int) extends Element {
-  private val line = ch.toString * width
-  override def contents: Array[String] = Array.fill(height)(line)
-}
+//class UniformElement(ch: Char, override val width: Int, override val height: Int) extends Element {
+//  private val line = ch.toString * width
+//  override def contents: Array[String] = Array.fill(height)(line)
+//}

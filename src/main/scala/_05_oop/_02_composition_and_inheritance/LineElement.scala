@@ -35,8 +35,41 @@ package _05_oop._02_composition_and_inheritance
   * that name. Once you add the hidden method to the second version of your shape class, a recompile of the client would
   * give an error like the following: (error: error overriding method ... method hidden needs 'override' modifier). That
   * is, instead of wrong behavior your client would get a compile-time error, which is usually much preferable.
+  *
+  * .......................................
+  *
+  * 10.11 USING COMPOSITION AND INHERITANCE
+  * ▶ Composition and inheritance are two ways to define a new class in terms of another existing class. If what you're
+  * after is primarily code reuse, you should in general prefer composition to inheritance. Only inheritance suffers
+  * from the fragile base class problem, in which you can inadvertently break subclasses by changing a superclass.
+  *
+  * >> One question you can ask yourself about an inheritance relationship is whether it models an is-a relationship.
+  * For example, it would be reasonable to say that ArrayElement is-an Element. Another question you can ask is whether
+  * clients will want to use the subclass type as a superclass type. In the case of ArrayElement, we do indeed expect
+  * clients will want to use an ArrayElement as an Element.
+  *
+  * >> If you ask these questions about the inheritance relationships for our hierarchy, do any of the relationships seem
+  * suspicious? In particular, does it seem obvious to you that a LineElement is-an ArrayElement? Do you think clients
+  * would ever need to use a LineElement as an ArrayElement?
+  * In fact, we defined LineElement as a subclass of ArrayElement primarily to reuse ArrayElement's definition of
+  * contents. Perhaps it would be better, therefore, to define LineElement as a direct subclass of Element, see the
+  * updated implementation of the class below.
+  * >> In the previous version, LineElement had an inheritance relationship with ArrayElement, from which it inherited
+  * contents. It now has a composition relationship with Array: it holds a reference to an array of strings from its own
+  * contents field.
+  *
+  *
+  * >>!!>> The implementation moved to Element object in section (10.13 DEFINING A FACTORY OBJECT)
   */
-class LineElement(line: String) extends ArrayElement(Array(line)) {
-  override val height: Int = line.length
-  override val width: Int = 1
-}
+// Updated code
+//class LineElement(s: String) extends Element {
+//  val contents = Array(s)
+//  override val width: Int = s.length
+//  override val height = 1
+//}
+
+// Old code (for 10.7 & 10.8)
+//class LineElement(line: String) extends ArrayElement(Array(line)) {
+//  override val height: Int = line.length
+//  override val width: Int = 1
+//}

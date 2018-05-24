@@ -41,7 +41,6 @@ package _05_oop
   *
   * 10.2 ABSTRACT CLASSES, and
   * 10.3 DEFINING PARAMETERLESS METHODS
-  *
   * @see Element class
   *
   *
@@ -75,6 +74,23 @@ package _05_oop
   *
   *
   * 10.11 USING COMPOSITION AND INHERITANCE
+  * @see LineElement class
+  *
+  *
+  * 10.12 IMPLEMENTING ABOVE, BESIDE, AND TOSTRING
+  * @see Element class
+  *
+  *
+  * 10.13 DEFINING A FACTORY OBJECT
+  * @see Element object and class
+  *
+  *
+  * 10.14 HEIGHTEN AND WIDEN
+  * @see Element class
+  *
+  *
+  * 10.15 PUTTING IT ALL TOGETHER
+  * @see Spiral object
   */
 package object _02_composition_and_inheritance {
 }

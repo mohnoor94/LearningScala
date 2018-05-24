@@ -48,6 +48,9 @@ package _05_oop._02_composition_and_inheritance
   * }
   * class Tiger (override val dangerous: Boolean, private var age: Int) extends Cat
   * ``
+  *
+  *
+  * >>!!>> The implementation moved to Element object in section (10.13 DEFINING A FACTORY OBJECT)
   */
-class ArrayElement (override val contents: Array[String]) extends Element {
-}
+//class ArrayElement (override val contents: Array[String]) extends Element {
+//}
