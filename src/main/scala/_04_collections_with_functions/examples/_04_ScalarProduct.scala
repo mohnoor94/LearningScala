@@ -1,8 +1,8 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
-object GeneralExample04_ScalarProduct extends App {
+object _04_ScalarProduct extends App {
   /*
    * Compute scalar product of 2 vectors
    */

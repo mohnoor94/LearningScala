@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _98_problem_solving
 
 import scala.io.Source
 import scala.language.postfixOps
@@ -36,7 +36,7 @@ import scala.language.postfixOps
   *
   * Let's try Scala =)
   */
-object GeneralExample09_Mnemonics extends App {
+object _02_Mnemonics extends App {
   val in = Source.fromURL("https://lamp.epfl.ch/files/content/sites/lamp/files/teaching/progfun/linuxwords.txt/")
   // toList, so we can use our functions on it.
   // filter (...) to include only all-letters words.

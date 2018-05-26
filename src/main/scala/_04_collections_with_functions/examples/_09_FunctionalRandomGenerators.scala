@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 trait Generator[+T] {
   self => // an alias for 'this'

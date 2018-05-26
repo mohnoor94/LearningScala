@@ -1,8 +1,8 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
-object GeneralExample03_Combinations extends App {
+object _03_Combinations extends App {
   /*
    * List all combinations of numbers x and y
    * where x is drawn from 1..M

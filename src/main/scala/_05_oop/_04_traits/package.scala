@@ -12,7 +12,6 @@ package _05_oop
   *
   *
   * 12.1 HOW TRAITS WORK
-  *
   * @see _01_HowTraitsWork
   *
   *
@@ -93,7 +92,7 @@ package _05_oop
   * ``
   * Type --------- Linearization
   * Animal ------>	Animal, AnyRef, Any
-  * Furry	------->  Furry, Animal, AnyRef, Any
+  * Furry ------->  Furry, Animal, AnyRef, Any
   * FourLegged -->  FourLegged, HasLegs, Animal, AnyRef, Any
   * HasLegs ----->  HasLegs, Animal, AnyRef, Any
   * Cat --------->  Cat, FourLegged, HasLegs, Furry, Animal, AnyRef, Any

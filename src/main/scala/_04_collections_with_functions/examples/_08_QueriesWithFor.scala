@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 case class Book(title: String, authors: List[String])
 

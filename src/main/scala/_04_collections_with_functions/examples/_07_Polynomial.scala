@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
@@ -12,7 +12,7 @@ import scala.language.postfixOps
   * Based on this observation, let's design a class Poly, that
   * represents polynomials as maps.
   */
-object GeneralExample08_Polynomial extends App {
+object _07_Polynomial extends App {
 
   class Poly1(val terms: Map[Int, Double]) {
     def +(other: Poly1) = new Poly1(terms ++ (other.terms map adjust))

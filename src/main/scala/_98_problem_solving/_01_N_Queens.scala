@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _98_problem_solving
 
 import scala.language.postfixOps
 
@@ -31,7 +31,7 @@ import scala.language.postfixOps
   *
   * --> List(2,0,3,1) : list of row-position of each queen (reversed).
   */
-object GeneralExample07_N_Queens extends App {
+object _01_N_Queens extends App {
   // Tests
   println(queens(4))
   println((queens(4) map show) mkString "\n")

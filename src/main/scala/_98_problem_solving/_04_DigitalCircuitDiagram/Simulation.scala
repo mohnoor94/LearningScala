@@ -1,4 +1,4 @@
-package _98_problem_solving._02_DigitalCircuitDiagram
+package _98_problem_solving._04_DigitalCircuitDiagram
 
 abstract class Simulation {
   type Action = () => Unit

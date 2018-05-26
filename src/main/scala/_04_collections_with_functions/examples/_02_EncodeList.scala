@@ -1,8 +1,8 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
-object GeneralExample02 extends App {
+object _02_EncodeList extends App {
   println(pack(List("a", "a", "a", "b", "c", "c", "a")))
   println(packEncode1(List("a", "a", "a", "b", "c", "c", "a")))
   println(packEncode2(List("a", "a", "a", "b", "c", "c", "a")))

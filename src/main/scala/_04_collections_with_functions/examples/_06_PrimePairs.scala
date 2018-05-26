@@ -1,4 +1,4 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
@@ -12,7 +12,7 @@ import scala.language.postfixOps
   * ----+---------------
   * i+j | 3 5 5 7 7 7 11
   */
-object GeneralExample06_primePairs extends App {
+object _06_PrimePairs extends App {
 
   def isPrime(n: Int): Boolean = !((2 until n) exists (n % _ == 0))
 

@@ -3,6 +3,7 @@ package _98_problem_solving
 import scala.collection.immutable
 
 /**
+  * The Water Pouring Problem
   * Problem Description:
   * https://en.wikipedia.org/wiki/Water_pouring_puzzle
   *

@@ -1,8 +1,8 @@
-package _04_collections_with_functions
+package _04_collections_with_functions.examples
 
 import scala.language.postfixOps
 
-object GeneralExample05_isPrime extends App {
+object _05_isPrime extends App {
 
   def isPrime1(n: Int): Boolean = !((2 until n) exists (n % _ == 0))
 
