@@ -21,7 +21,7 @@ I'm using multiple resources to study and apply what I learn here with examples.
 * Scala: Beyond the Basics. By [Daniel Hinojosa](https://github.com/dhinojosa). Online workshop on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/dhinojosa/scala_beyond_basics) for this workshop.
 * [Scala Puzzlers](http://scalapuzzlers.com/). The fun path to deeper understanding. By Andrew Phillips and Nermin Šerifović.
-    * This book is used in '_96_scala_puzzlers' package, all examples, and a lot of explanations are copied as they are.
+    * This book is used in '_970_scala_puzzlers' package, all examples, and a lot of explanations are copied as they are.
 * [Practical Scala for Java Developers](https://www.safaribooksonline.com/library/view/practical-scala-for/9781491969472/). By Julian Templeman and Ben Evans. Online course on [Safari Online Books](https://www.safaribooksonline.com/home/).
     * [GitHub Repository](https://github.com/julian-t/EssentialScala) for this course.
 * [Scala 101](https://cognitiveclass.ai/learn/scala/#course2000). Free online course on [Cognitive Class](https://cognitiveclass.ai/).
