@@ -17,15 +17,17 @@ package _05_oop._04_traits
   * If you do, you will provide the class's users with a rich set of comparison methods.
   */
 object _02_OrderedTrait {
+
   class MiniRational(val numerator: Int, val denominator: Int) extends Ordered[MiniRational] {
     require(denominator != 0)
 
-    override def compare(that: MiniRational): Int = (this.numerator * that.denominator) - (that.numerator * this.denominator)
+    override def compare(that: MiniRational): Int =
+      (this.numerator * that.denominator) - (that.numerator * this.denominator)
   }
 
   def main(args: Array[String]): Unit = {
-    val r1 = new MiniRational(5,10)
-    val r2 = new MiniRational(3,4)
+    val r1 = new MiniRational(5, 10)
+    val r2 = new MiniRational(3, 4)
     println(s"r1 < r2: ${r1 < r2}")
     println(s"r1 > r2: ${r1 > r2}")
     println(s"r1 <= r2: ${r1 <= r2}")

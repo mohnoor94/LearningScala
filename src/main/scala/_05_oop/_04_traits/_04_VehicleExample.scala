@@ -1,5 +1,4 @@
-package _05_oop
-
+package _05_oop._04_traits
 
 // a trait is like interface in Java but can have
 // concrete members.

@@ -1,4 +1,4 @@
-package _05_oop
+package _05_oop._04_traits
 
 object Log extends App {
   val c = new Child(40, 10)

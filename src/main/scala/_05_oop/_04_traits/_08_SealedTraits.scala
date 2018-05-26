@@ -1,4 +1,4 @@
-package _05_oop
+package _05_oop._04_traits
 
 /**
   * A sealed trait is a trait that will have children,
@@ -39,7 +39,7 @@ final case class Leaf[A](value: A) extends Tree[A]
 case object Empty extends Tree[Nothing]
 
 
-object Traits_05_SealedTraits extends App {
+object _08_SealedTraits extends App {
   val tree: Tree[Int] = Node(Leaf(5), Leaf(10))
   println(tree.asInstanceOf[Node[_]].left.asInstanceOf[Leaf[_]].value)
 
