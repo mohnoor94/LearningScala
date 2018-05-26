@@ -1,4 +1,4 @@
-package _05_oop._03_Scala_hierarchy
+package _05_oop._03_scala_hierarchy
 
 object _01_AnyValExamples extends App {
   /* The value classes support the usual arithmetic and boolean operators as methods. For instance, Int has methods

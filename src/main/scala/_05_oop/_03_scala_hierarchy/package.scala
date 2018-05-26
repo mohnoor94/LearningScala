@@ -2,6 +2,8 @@ package _05_oop
 
 /**
   * Chapter 11 - Scala's Hierarchy
+  * From: Programming in Scala, Third Edition
+  *
   * In Scala, every class inherits from a common superclass named Any. Because every class is a subclass of Any, the
   * methods defined in Any are "universal" methods: they may be invoked on any object. Scala also defines some
   * interesting classes at the bottom of the hierarchy, Null and Nothing, which essentially act as common subclasses.
@@ -72,5 +74,5 @@ package _05_oop
   * ▶ The reason AnyRef alias exists, instead of just using the name java.lang.Object, is because Scala was originally
   * designed to work on both the Java and .NET platforms. On .NET, AnyRef was an alias for System.Object.
   */
-package object _03_Scala_hierarchy {
+package object _03_scala_hierarchy {
 }

@@ -1,4 +1,4 @@
-package _05_oop._03_Scala_hierarchy
+package _05_oop._03_scala_hierarchy
 
 /**
   * You can define your own value classes to augment the ones that are built in. Like the built-in value classes, an

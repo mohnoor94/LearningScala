@@ -1,4 +1,4 @@
-package _05_oop._03_Scala_hierarchy
+package _05_oop._03_scala_hierarchy
 
 object _02_AnyRefExamples extends App {
   /* The equality operation == in Scala is designed to be transparent with respect to the type's representation. For

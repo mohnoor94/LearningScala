@@ -1,4 +1,4 @@
-package _05_oop._03_Scala_hierarchy
+package _05_oop._03_scala_hierarchy
 
 /**
   * Avoiding a types monoculture:
