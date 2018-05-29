@@ -29,4 +29,4 @@ I'm using multiple resources to study and apply what I learn here with examples.
 * [Scala for Java Developers: A Practical Primer](https://www.apress.com/us/book/9781484231074). A book by Toby Weston.
 #
 #### Note:
-The order of packages and/or files do not always mean that's the natural order of learning these specific topics, but it directly reflects the order of when I learned this piece of information. 
+The order of packages and/or files do not always reflect the natural order of learning these specific topics, but the order I used to learn this piece of information. 
