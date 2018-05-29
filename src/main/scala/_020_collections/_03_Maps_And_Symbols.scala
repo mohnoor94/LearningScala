@@ -1,5 +1,7 @@
 package _020_collections
 
+import scala.collection.immutable.TreeMap
+
 /**
   * A Map is a collection of pairs, also known as Tuple2
   */
@@ -69,4 +71,11 @@ object _03_Maps_And_Symbols extends App {
   println(s"elementsWithDefaultValue('Co): ${elementsWithDefaultValue('Co)}")
   println(s"elementsWithDefaultValue('H): ${elementsWithDefaultValue('H)}")
   println(s"elementsWithDefaultValue('Hi): ${elementsWithDefaultValue('Hi)}")
+
+  println("==================")
+  /** TreeMap (with order) */
+  /** TreeMap itself is mutable, but because it we use a var, we can reassign it with a new value! */
+  var treeMap = TreeMap(3 -> 'x', 1 -> 'x', 4 -> 'x')
+  treeMap += 2 -> 'x' // this is a new copy of the map assigned to the same var
+  println(s"treeMap ==> $treeMap")
 }

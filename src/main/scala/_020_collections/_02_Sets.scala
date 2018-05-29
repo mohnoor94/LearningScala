@@ -76,7 +76,8 @@ object _02_Sets extends App {
 
   println("==================")
 
-  val treeSet = TreeSet(1, 2, 3, 4, 5, 6, 8)
+  /** TreeSet (with order)*/
+  val treeSet = TreeSet(1, 2, 3, 4, 5, 6, 8, 2, -1, 3)
   println(s"treeSet ==> $treeSet")
   println(s"treeSet.contains(4) ==> ${treeSet.contains(4)}")
   println(s"treeSet.apply(4) ==> ${treeSet.apply(4)}")

@@ -7,6 +7,10 @@ import java.time.LocalTime
   * >> First, lists are immutable. That is, elements of a list cannot be changed by assignment.
   * >> Second, lists have a recursive structure (i.e., a linked list), whereas arrays are flat.
   *
+  * > Perhaps the most important sequence type to know about is class List,the immutable linked-list.
+  * >> Lists support fast addition and removal of items to the beginning of the list, but they do not provide fast
+  * access to arbitrary indexes because the implementation must iterate through the list linearly.
+  *
   * > The list type in Scala is covariant. This means that for each pair of types S and T, if S is a subtype of T, then
   * List[S] is a subtype of List[T]. For instance, List[String] is a subtype of List[Object]
   * >> This is natural because every list of strings can also be seen as a list of objects.
