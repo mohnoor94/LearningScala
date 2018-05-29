@@ -2,6 +2,9 @@ package _010_functions
 
 import scala.language.postfixOps
 
+/**
+  * a function is "higher-order" if it takes one or more other functions as a parameters.
+  */
 object _02_1_HigherOrderFunctions extends App {
   // Functions with functions (Higher order functions)
   // function2...

@@ -2,6 +2,22 @@ package _020_collections
 
 import java.time.LocalTime
 
+/**
+  * > Lists are quite similar to arrays, but there are two important differences.
+  * >> First, lists are immutable. That is, elements of a list cannot be changed by assignment.
+  * >> Second, lists have a recursive structure (i.e., a linked list), whereas arrays are flat.
+  *
+  * > The list type in Scala is covariant. This means that for each pair of types S and T, if S is a subtype of T, then
+  * List[S] is a subtype of List[T]. For instance, List[String] is a subtype of List[Object]
+  * >> This is natural because every list of strings can also be seen as a list of objects.
+  * >> The empty list has type List[Nothing].
+  * >> So the empty list object, which has type List[Nothing], can also be seen as an object of every other list type of
+  * the form List[T] (Nothing is the bottom type of every other type in Scala).
+  *
+  *
+  * >> IMPORTANT:
+  * Study '16.10 Understanding Scala's type inference algorithm', From: Programming in Scala, Third Edition.
+  */
 object _01_Lists extends App {
   val a = List(1, 2, 3, 4, 5)
   val a2 = List.apply(1, 2, 3, 4, 5)
@@ -24,6 +40,13 @@ object _01_Lists extends App {
   println(s"a.tail: ${a.tail}")
   println(s"a.tail.head: ${a.tail.head}")
   println(s"a.tail.tail.head: ${a.tail.tail.head}")
+  /**
+    * > Unlike head and tail, which both run in constant time, init and last need to traverse the whole list to compute
+    * their result.
+    * >> As a result, they take time proportional to the length of the list.
+    * ▶ It's a good idea to organize your data so that most accesses are at the head of a list, rather than the last
+    * element.
+    */
   println(s"a.init: ${a.init}")
   println(s"a.last: ${a.last}")
 
@@ -32,9 +55,20 @@ object _01_Lists extends App {
   println(s"a(3): ${a(3)}")
   println(s"a.min: ${a.min}")
   println(s"a.max: ${a.max}")
+  /**
+    * > On lists, unlike arrays, length is a relatively expensive operation.
+    * >> It needs to traverse the whole list to find its end, and therefore
+    * >> takes time proportional to the number of elements in the list.
+    * >> That's why it's not a good idea to replace a test such as xs.isEmpty by xs.length == 0.
+    * >> The result of the two tests is equivalent, but the second one is slower, in particular if the list xs is long.
+    */
   println(s"a.isEmpty: ${a.isEmpty}")
   println(s"a.nonEmpty: ${a.nonEmpty}")
   println(s"a.updated(3, 100): ${a.updated(3, 100)}")
+
+  println("===================")
+
+  println(s"a indices ==> ${a.indices}")
 
   println("===================")
 
@@ -66,6 +100,10 @@ object _01_Lists extends App {
 
   println("===================")
 
+  /**
+    * If at some point in the computation an algorithm demands frequent accesses to the end of a list, it's sometimes
+    * better to reverse the list first and work with the result instead.
+    */
   println(s"a.reverse: ${a.reverse}")
 
   println("===================")

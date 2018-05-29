@@ -3,6 +3,12 @@ package _010_functions
 /**
   * Currying is the technique of transforming a function that takes multiple arguments
   * into a function that take a single argument
+  *
+  * ▶ When designing a polymorphic method that takes some non-function arguments and a function argument, place the
+  * function argument last in a curried parameter list on its own. That way, the method's correct instance type can
+  * be inferred from the non-function arguments, and that type can in turn be used to type check the function argument.
+  * The net effect is that users of the method will be able to give less type information and write function literals in
+  * more compact ways.
   */
 object _03_Currying extends App {
   {
@@ -33,8 +39,8 @@ object _03_Currying extends App {
     def baz(x: Int, y: Int)(z: Int): Int = x + y + z
 
     val f3 = foo _ // => function3
-    val f1 = bar _ // => function1
-    val f2 = baz _ // => function2
+  val f1 = bar _ // => function1
+  val f2 = baz _ // => function2
 
     val g1 = foo(5, _: Int, _: Int)
     val g2 = bar(5) _

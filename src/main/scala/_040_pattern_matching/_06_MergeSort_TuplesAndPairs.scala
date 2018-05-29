@@ -17,7 +17,7 @@ object _06_MergeSort_TuplesAndPairs extends App {
   println(mergeSort3(List(5.2, 0.6, 9, -3.25, -6, 8))(Ordering.Double))
   println(mergeSort3(List("pineapple", "apple", "orange", "banana"))(Ordering.String))
   println
-  println(">> Check version 4 using implicits in next package!")
+  println(">> Check version 4 using implicits in 'implicit' package!")
 
 
   def mergeSort1(xs: List[Int]): List[Int] = {
@@ -25,8 +25,8 @@ object _06_MergeSort_TuplesAndPairs extends App {
     if (n == 0) xs
     else {
       def merge(xs: List[Int], ys: List[Int]): List[Int] = (xs, ys) match {
-        case (Nil, ys1) => ys1
-        case (xs1, Nil) => xs1
+        case (Nil, _) => ys
+        case (_, Nil) => xs
         case (x :: xs1, y :: ys1) =>
           if (x < y) x :: merge(xs1, ys)
           else y :: merge(ys1, xs)
@@ -42,8 +42,8 @@ object _06_MergeSort_TuplesAndPairs extends App {
     if (n == 0) xs
     else {
       def merge(xs: List[T], ys: List[T]): List[T] = (xs, ys) match {
-        case (Nil, ys1) => ys1
-        case (xs1, Nil) => xs1
+        case (Nil, _) => ys
+        case (_, Nil) => xs
         case (x :: xs1, y :: ys1) =>
           if (lt(x, y)) x :: merge(xs1, ys)
           else y :: merge(ys1, xs)
