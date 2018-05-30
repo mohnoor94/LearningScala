@@ -1,4 +1,4 @@
-package _980_problem_solving._04_DigitalCircuitDiagram
+package _980_problem_solving.DigitalCircuitDiagram
 
 abstract class Gates extends Simulation {
   def InverterDelay: Int

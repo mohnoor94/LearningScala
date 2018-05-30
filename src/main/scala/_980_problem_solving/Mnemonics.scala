@@ -36,7 +36,7 @@ import scala.language.postfixOps
   *
   * Let's try Scala =)
   */
-object _02_Mnemonics extends App {
+object Mnemonics extends App {
   val in = Source.fromURL("https://lamp.epfl.ch/files/content/sites/lamp/files/teaching/progfun/linuxwords.txt/")
   // toList, so we can use our functions on it.
   // filter (...) to include only all-letters words.

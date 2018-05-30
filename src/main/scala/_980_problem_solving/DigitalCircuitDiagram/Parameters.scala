@@ -1,4 +1,4 @@
-package _980_problem_solving._04_DigitalCircuitDiagram
+package _980_problem_solving.DigitalCircuitDiagram
 
 trait Parameters {
   def InverterDelay = 2
