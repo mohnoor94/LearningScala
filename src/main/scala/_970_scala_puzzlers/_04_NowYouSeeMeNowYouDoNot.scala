@@ -8,6 +8,8 @@ package _970_scala_puzzlers
   * What happen here is because any val can be initialized only once,
   * and since 'bar' overridden in class C, it will read as its the default
   * value (default value of any Int is 0) at any point before class C!
+  *
+  * >  An implementing val definition in a subclass, is evaluated only after the superclass has been initialized.
   */
 object _04_NowYouSeeMeNowYouDoNot {
 
@@ -35,6 +37,12 @@ object _04_NowYouSeeMeNowYouDoNot {
     new LazyValSolution.C
     println("\n===== Pre-Initialized Fields Solution =====\n")
     new PreInitializedFieldSolution.C
+    println("\n===== Pre-Initialized Fields (Directly with the Object) Solution =====\n")
+    new {
+      override val bar = 99
+    } with B {
+      println("In C ==> foo: " + foo + ", bar: " + bar)
+    }
   }
 
   // Solutions!
@@ -106,6 +114,8 @@ object _04_NowYouSeeMeNowYouDoNot {
     * field definition clause of class C. An early field definition clause is the code within curly braces
     * immediately following the extends keyword. It is the part of a subclass that is intended to run
     * before its superclass constructor. By doing that, you make sure bar is initialized before trait A is constructed.
+    *
+    * > Pre-initialized fields are initialized before the superclass constructor is called
     */
   object PreInitializedFieldSolution {
 
