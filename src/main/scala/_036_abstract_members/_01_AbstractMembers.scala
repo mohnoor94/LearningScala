@@ -1,4 +1,4 @@
-package _110_abstract_members
+package _036_abstract_members
 
 /**
   * Main Resource: Chapter 20 - Abstract Member, From Programming in Scala, Third Edition.
@@ -32,6 +32,9 @@ package _110_abstract_members
   * of the abstract var.
   *
   * @see '_970_scala_puzzlers._04_NowYouSeeMeNowYouDoNot'
+  *
+  *
+  * Read 20.10 CASE STUDY: CURRENCIES
   */
 object _01_AbstractMembers {
 
