@@ -1,6 +1,13 @@
-package _960_general_examples
+package _980_problem_solving
 
-object _007_FizzBuzz {
+/**
+  * Problem: Print the numbers 1 - 100, but if the number is:
+  *  - divisible by 3 -> print 'Fizz'
+  *  - divisible by 5 -> print 'Buzz'
+  *  - divisible by 3 and 5 -> print 'FizzBuzz'
+  * instead of the number.
+  */
+object FizzBuzz {
 
   def fizzBuzz0(range: Range): Unit = {
     range.foreach(i => {

@@ -1,4 +1,4 @@
-package _960_general_examples
+package _980_problem_solving
 
 /**
   * Find the number of words that can be made by permuting the letters of a given string
@@ -9,7 +9,7 @@ package _960_general_examples
   * n: number of distinct letter in the given text
   * r: word length (I'm taking word length from 1 up to n and add the results)
   */
-object _005_PossibleWordsOfStringPermutations {
+object PossibleWordsOfStringPermutations {
   def countPossibleWords(text: String): BigInt = {
 //    val factorial = (number: Int) => (2 to number).product
     def factorial(number: BigInt, result: BigInt = 1): BigInt =

@@ -1,10 +1,10 @@
-package _960_general_examples
+package _980_problem_solving
 
 /**
   * You have a string. And you have to add any number of letters to the string,
   * to the right or left, such that finally you get a palindrome.
   */
-object _004_MakeMePalindrome {
+object MakeMePalindrome {
   def makeMePalindrome(text: String): String = {
     if (text == text.reverse) text
     else {

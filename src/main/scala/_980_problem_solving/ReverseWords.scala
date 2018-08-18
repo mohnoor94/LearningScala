@@ -1,6 +1,6 @@
-package _960_general_examples
+package _980_problem_solving
 
-object _006_ReverseWords {
+object ReverseWords {
   //    def reverseWords(sentence: String): String = sentence.trim.split("\\s+").map(_.reverse).mkString(" ")
   val reverseWords: String => String = (sentence: String) => sentence.trim.split("\\s+").map(_.reverse).mkString(" ")
 

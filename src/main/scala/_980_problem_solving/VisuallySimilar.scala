@@ -1,4 +1,4 @@
-package _960_general_examples
+package _980_problem_solving
 
 /**
   * Recognize visually similar sentences
@@ -9,9 +9,9 @@ package _960_general_examples
   * S 5
   * The input are assumed to contain capital letters only.
   */
-object _008_VisuallySimilar {
-  private val replacements: Map[Char, Char] = Map('Q' -> 'O', '0' -> 'O', '1' -> 'I', 'S' -> '5')
-  private val transformer: Char => Char = (ch: Char) => replacements.getOrElse(ch, ch)
+object VisuallySimilar {
+  private val replacements = Map('Q' -> 'O', '0' -> 'O', '1' -> 'I', 'S' -> '5')
+  private val transformer = (ch: Char) => replacements.getOrElse(ch, ch)
 
   def isVisuallySimilar(firstSentence: String, secondSentence: String): Boolean =
     firstSentence.map(transformer) equals secondSentence.map(transformer)

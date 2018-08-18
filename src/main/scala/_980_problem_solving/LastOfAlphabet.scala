@@ -1,9 +1,9 @@
-package _960_general_examples
+package _980_problem_solving
 
 /**
   * Find the farthest (last) letter of the alphabet in a given string
   */
-object _003_LastOfAlphabet {
+object LastOfAlphabet {
   def lastOfAlphabet(text: String): Char =
     text.map(_.toLower).max
 
