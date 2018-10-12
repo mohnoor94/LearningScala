@@ -1,5 +1,7 @@
 package _000_intro
 
+import scala.language.postfixOps
+
 object _06_Tuples extends App {
   val t = (1, "Hello", 3.2)
 

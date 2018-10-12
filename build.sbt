@@ -1,9 +1,8 @@
-name := "tests"
+name := "My Scala Learning Journey"
 
-version := "0.1"
+version := "1.X"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.7"
 
-//libraryDependencies ++= Seq("org.scalactic" %% "scalactic" % "3.0.5")
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
