@@ -7,7 +7,7 @@ import _040_pattern_matching._16_BasicOperationsExample.{BinOp, Expr, Number}
   * a simplification rule that replaces sum expressions with two identical operands, such as e + e, by multiplications
   * of two (e.g., e * 2).
   */
-object _18_patternGuards {
+object _18_PatternGuards {
   //  def simplifyAdd(e: Expr): Expr = e match {
   //    case BinOp("+", x, x) => BinOp("*", x, Number(2)) // error: x is already defined as value x
   //    case _ => e
