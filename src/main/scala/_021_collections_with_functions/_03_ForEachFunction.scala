@@ -10,4 +10,6 @@ object _03_ForEachFunction extends App {
   a.foreach(println _)
   println
   a.foreach(println)
+  println
+  a foreach println
 }
