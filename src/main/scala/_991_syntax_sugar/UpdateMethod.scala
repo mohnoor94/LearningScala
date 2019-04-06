@@ -1,4 +1,4 @@
-package _990_random
+package _991_syntax_sugar
 
 /**
   * In Scala, calls to update can be written as assignments.

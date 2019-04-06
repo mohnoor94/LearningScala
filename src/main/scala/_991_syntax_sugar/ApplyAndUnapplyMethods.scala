@@ -1,4 +1,4 @@
-package _990_random
+package _991_syntax_sugar
 
 object ApplyAndUnapplyMethods {
 
