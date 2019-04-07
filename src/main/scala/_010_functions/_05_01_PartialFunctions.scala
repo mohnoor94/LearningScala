@@ -11,7 +11,7 @@ package _010_functions
   * @see '_06_pattern_matching' => '_15_PartialFunctionsUsingPatternMatching'
   *      for more examples!
   */
-object _05_PartialFunctions extends App {
+object _05_01_PartialFunctions extends App {
   // function
   val f: String => String = {
     case "ping" => "pong"
