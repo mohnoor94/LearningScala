@@ -25,7 +25,7 @@ case class NonEmptySet[A](head: A, tail: MySet[A]) extends MySet[A] {
 
   override def &(anotherSet: MySet[A]): MySet[A] = filter(anotherSet) // anotherSet contains elem
 
-  override def unary_! : MySet[A] = ???
+  override def unary_! : MySet[A] = new PropertyBasedSet[A](x => !(this contains x))
 
   override def map[B](f: A => B): MySet[B] = (tail map f) + f(head)
 

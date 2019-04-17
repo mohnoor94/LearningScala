@@ -48,4 +48,38 @@ object Test extends App {
   println()
   println("intersection:")
   s & s2 foreach (e => print(s"$e, "))
+  println()
+
+  //////////////////////////////////////////////////////////////////////
+  println("//" * 50)
+  println()
+
+  val negative = !s // s.unary_!= all natural numbers not equal to 1,2,3, or 4
+  println(negative(2))
+  println(negative(20))
+  println(negative(200))
+  println(negative(5))
+  println()
+
+  val negativeEven = negative.filter(_ % 2 == 0)
+  println(negativeEven(2))
+  println(negativeEven(20))
+  println(negativeEven(205))
+  println(negativeEven(5))
+  println()
+
+  val negativeEvenPlus5 = negativeEven + 5
+  println(negativeEvenPlus5(2))
+  println(negativeEvenPlus5(20))
+  println(negativeEvenPlus5(205))
+  println(negativeEvenPlus5(5))
+  println()
+
+  val threes = new PropertyBasedSet[Int](_ % 3 == 0)
+  println(threes(0))
+  println(threes(3))
+  println(threes(-6))
+  println(threes(100))
+  println(threes(1))
+  println(threes(-2))
 }

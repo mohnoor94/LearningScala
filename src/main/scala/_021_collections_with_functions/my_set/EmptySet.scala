@@ -14,7 +14,7 @@ class EmptySet[A] extends MySet[A] {
 
   override def &(anotherSet: MySet[A]): MySet[A] = this
 
-  override def unary_! : MySet[A] = ???
+  override def unary_! : MySet[A] = new PropertyBasedSet[A](_ => true) // All inclusive set!
 
   override def map[B](f: A => B): MySet[B] = new EmptySet[B]
 
