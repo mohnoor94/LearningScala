@@ -5,7 +5,7 @@ import java.util.Date
 /**
   * Partially Applied Function
   */
-object _06_PartiallyAppliedFunction {
+object _06_02_PartiallyAppliedFunctions {
 
   def log(date: Date, message: String): Unit = {
     println(s"$date --> $message")
