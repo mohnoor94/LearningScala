@@ -42,7 +42,6 @@ object _03_CommonUsagesOfLazyVal {
   }
 
   def main(args: Array[String]): Unit = {
-    separator()
     myFunction(Foo(List("Foo", "Bar", "Sha", "Baz")))
     separator()
     println(fileContents1)
@@ -52,7 +51,6 @@ object _03_CommonUsagesOfLazyVal {
   }
 
   def separator(): Unit = {
-    for (_ <- 0 until 10) print("-")
-    println()
+    println("-" * 10)
   }
 }
